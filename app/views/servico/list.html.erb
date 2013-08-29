@@ -26,7 +26,7 @@
     <div class="clearfix">
 
       <%= form_tag({controller: "servico", action: "find"}, class: "search_form position-left", id: "search_form") do %>
-          <%= text_field_tag :nome_servico, @nome_search, class: "location active", id: "location", placeholder: "Qual serviço você deseja?", style: "width: 865px" %>
+          <%= text_field_tag :nome_servico, params[:nome_servico], class: "location active", id: "location", placeholder: "Qual serviço você deseja?", style: "width: 865px" %>
           <div class="btn-icon-container pull-left">
             <%= submit_tag "Buscar", class: "btn green" %>
           </div>
