@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Hoje é dia de serviços, bebê!</title>
-
-  <link href="o2.0.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="page2.css" media="screen" rel="stylesheet" type="text/css">
-
-</head>
-
 <body>
 
 <div class="rooster-root"></div>
@@ -26,7 +15,7 @@
     <div class="clearfix">
 
       <%= form_tag({controller: "servico", action: "find"}, class: "search_form position-left", id: "search_form") do %>
-          <%= text_field_tag :nome_servico, params[:nome_servico], class: "location active", id: "location", placeholder: "Qual serviço você deseja?", style: "width: 865px" %>
+          <%= text_field_tag :nome_servico, params[:nome_servico], class: "location active", id: "servicos", placeholder: "Qual serviço você deseja?", style: "width: 865px" %>
           <div class="btn-icon-container pull-left">
             <%= submit_tag "Buscar", class: "btn green" %>
           </div>
@@ -103,6 +92,21 @@
 
   </div>
 </div>
+
+
+<script>
+
+    /*       AUTOCOMPLETE DO CAMPO 'QUAL SERVICO VOCE DESEJA?'     */
+    $(function() {
+        $("#servicos").autocomplete({
+            source: "/servico/list",
+            select: function(event, ui) {
+                $('#search_form').submit();
+            }
+        });
+    });
+
+</script>
 
 
 </body>

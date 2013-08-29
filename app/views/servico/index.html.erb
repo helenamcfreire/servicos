@@ -3,15 +3,21 @@
 
 <head>
 
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<style>
+  .ui-autocomplete {
+      max-height: 200px;
+      overflow-y: auto;
+      /* prevent horizontal scrollbar */
+      overflow-x: hidden;
+  }
 
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Hoje é dia de serviços, bebê!</title>
-
-  <link href="o2.0.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="p1_v2.css" media="screen" rel="stylesheet" type="text/css">
+      /* IE 6 doesn't support max-height
+       * we use height instead, but this forces the menu to always be this tall
+       */
+  * html .ui-autocomplete {
+      height: 200px;
+  }
+</style>
 
 </head>
 
@@ -35,7 +41,7 @@
 
       <%= form_tag({controller: "servico", action: "find"}, method: "get", class: "custom show-search-options position-left", id: "search_form") do %>
           <div class="input-wrapper">
-            <%= text_field_tag :nome_servico, nil, class: "location", id: "location", placeholder: "Qual serviço você deseja?" %>
+            <%= text_field_tag :nome_servico, nil, class: "location", id: "servicos", placeholder: "Qual serviço você deseja?" %>
           </div>
           <%= submit_tag "Buscar", class: "large pink btn icon-and-text position-left" %>
       <% end %>
@@ -44,3 +50,29 @@
   </div>
 
 </div>
+
+<script>
+
+  /*       AUTOCOMPLETE DO CAMPO 'QUAL SERVICO VOCE DESEJA?'     */
+    $(function() {
+        $("#servicos").autocomplete({
+            source: "/servico/list",
+            select: function(event, ui) {
+                $('#search_form').submit();
+            }
+        });
+    });
+
+  /*       AUTOCOMPLETE DO CAMPO 'INFORME SUA CIDADE'      */
+    $(function() {
+        $("#header-location").autocomplete({
+            source: "/cidade/list",
+            select: function(event, ui) {
+                $.ajax({
+                    url: "/application/mudar_cidade?cidade="+ui.item.label
+                });
+            }
+        });
+    });
+
+</script>

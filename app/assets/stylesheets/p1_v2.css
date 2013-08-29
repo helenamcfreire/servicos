@@ -491,8 +491,8 @@ ul.city-tiles li .label {
     background-color: #ee2c91 !important
 }
 
-#location {
-    width: 763px
+.location {
+    width: 763px!important;
 }
 
 @-webkit-keyframes slideleft {
