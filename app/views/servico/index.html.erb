@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Hoje é dia de serviços, bebê!</title>
+
+  <link href="o2.0.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="p1_v2.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class=" home_view v2">
+
+<div class="rooster-root"></div>
+
+<%= render "/header" %>
+
+
+<div class="span12 flash-container"></div>
+
+<div id="hero">
+
+  <div class="search-area">
+
+    <div class="container">
+
+      <h1>Ache o serviço que você precisa</h1>
+      <h2>Escolha dentre milhares de empresas no Brasil.</h2>
+
+      <%= form_tag({controller: "servico", action: "find"}, method: "get", class: "custom show-search-options position-left", id: "search_form") do %>
+          <div class="input-wrapper">
+            <%= text_field_tag :nome_servico, nil, class: "location", id: "location", placeholder: "Qual serviço você deseja?" %>
+          </div>
+          <%= submit_tag "Buscar", class: "large pink btn icon-and-text position-left" %>
+      <% end %>
+
+    </div>
+  </div>
+
+</div>

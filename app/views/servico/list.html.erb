@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Hoje é dia de serviços, bebê!</title>
+
+  <link href="o2.0.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="page2.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div class="rooster-root"></div>
+
+<%= render "/header" %>
+
+<div class="span12 flash-container"></div>
+
+
+<div id="v3_search" class="container clearfix list_view" style="">
+  <div id="search_params" class="panel-padding panel-background-gray panel-border">
+    <div class="clearfix">
+
+      <%= form_tag({controller: "servico", action: "find"}, class: "search_form position-left", id: "search_form") do %>
+          <%= text_field_tag :nome_servico, @nome_search, class: "location active", id: "location", placeholder: "Qual serviço você deseja?", style: "width: 865px" %>
+          <div class="btn-icon-container pull-left">
+            <%= submit_tag "Buscar", class: "btn green" %>
+          </div>
+      <% end %>
+
+    </div>
+  </div>
+
+
+  <div class="search-container row">
+    <div id="search_body" class="col" style="">
+
+
+      <ul id="results" class="unstyled">
+
+        <% @empresa_servicos.each do |empresa_servicos| %>
+
+            <li id="room_921262" class="search_result" data-hosting-id="921262" data-host-id="4952896">
+
+              <div class="pop_image_small">
+                <a href="#" class="image_link matte-media-box">
+
+                  <img class="search_thumbnail listing-default" width="114" height="74" data-original="https://a2.muscache.com/pictures/18870549/small.jpg" style="display: inline;">
+
+                </a>
+              </div>
+
+              <h3 class="room_title overflow-ellipsis">
+                <a class="name" href="#"><%= empresa_servicos.empresa.nome %></a>
+              </h3>
+
+              <div class="price">
+                <div class="price_data">
+                  <sup>R$</sup><%= empresa_servicos.preco %><sup class=""></sup>
+                </div>
+                <div class="price_modifier">
+                  &nbsp;
+                  Por dia
+                </div>
+              </div>
+              <div class="descriptor descriptor-gray overflow-ellipsis">
+                <address>
+                  <%= empresa_servicos.empresa.endereco %>
+                </address>
+
+              </div>
+
+              <ul class="reputation unstyled">
+
+                <li class="badge badge_type_reviews-bubble">
+        <span class="badge_image">
+          <span class="badge_text reviews-bubble">
+            23
+          </span>
+        </span>
+                  <span class="badge_name">comentários</span>
+                </li>
+
+              </ul>
+
+            </li>
+
+        <% end %>
+
+
+        <div id="results_footer" class="panel-padding" style="overflow: hidden;">
+            <%= will_paginate @empresa_servicos %>
+        </div>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+</body>
+
+</html>
