@@ -14,6 +14,10 @@ gem 'will_paginate'
 #Pagination styling conventions in Twitter's Bootstrap toolkit
 gem 'bootstrap-will_paginate'
 
+#Upload de arquivos
+gem 'paperclip'
+gem 'aws-sdk'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

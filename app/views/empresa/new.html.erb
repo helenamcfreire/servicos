@@ -1,0 +1,10 @@
+<%= form_for @empresa, :url => {:action => 'create'} do |r| %>
+
+    Nome: <%= r.text_field :nome %><br/>
+    Endereço: <%= r.text_field :endereco %><br/>
+    Foto: <%= r.file_field :image %><br/>
+    Cidade: <%= r.select :cidade_id, Cidade.all.map{ |c| [c.nome, c.id] } %>
+
+    <%= r.submit t(:cadastrar) %>
+
+<% end %>
