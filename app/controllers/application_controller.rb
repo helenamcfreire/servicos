@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def public_ip
-    open('http://whatismyip.akamai.com').read
+    request.remote_ip
   end
 
   def mudar_cidade
