@@ -22,19 +22,23 @@
 
 <!-- Plugin para feedback -->
 
-<script id="_webengage_script_tag" type="text/javascript">
-    var _weq = _weq || {};
-    _weq['webengage.licenseCode'] = '~c2ab33b4';
-    _weq['webengage.widgetVersion'] = "4.0";
+<!-- UserVoice JavaScript SDK (only needed once on a page) -->
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/kV1sfRwNnd5MTgYXm9E7Gw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
 
-    (function(d){
-        var _we = d.createElement('script');
-        _we.type = 'text/javascript';
-        _we.async = true;
-        _we.src = (d.location.protocol == 'https:' ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/widget/webengage-min-v-4.0.js";
-        var _sNode = d.getElementById('_webengage_script_tag');
-        _sNode.parentNode.insertBefore(_we, _sNode);
-    })(document);
+<!-- A tab to launch the Classic Widget -->
+<script>
+    UserVoice = window.UserVoice || [];
+    UserVoice.push(['showTab', 'classic_widget', {
+        mode: 'full',
+        primary_color: '#354b5e',
+        link_color: '#475f77',
+        default_mode: 'feedback',
+        forum_id: 220812,
+        tab_label: 'Feedback & Support',
+        tab_color: '#354b5e',
+        tab_position: 'bottom-right',
+        tab_inverted: false
+    }]);
 </script>
 
 </body>
