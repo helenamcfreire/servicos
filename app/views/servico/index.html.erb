@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-
-<style>
-  .ui-autocomplete {
-      max-height: 200px;
-      overflow-y: auto;
-      /* prevent horizontal scrollbar */
-      overflow-x: hidden;
-  }
-
-      /* IE 6 doesn't support max-height
-       * we use height instead, but this forces the menu to always be this tall
-       */
-  * html .ui-autocomplete {
-      height: 200px;
-  }
-</style>
-
-</head>
-
 <body class=" home_view v2">
 
 <div class="rooster-root"></div>
@@ -59,18 +39,6 @@
             source: "/servico/list",
             select: function(event, ui) {
                 $('#search_form').submit();
-            }
-        });
-    });
-
-  /*       AUTOCOMPLETE DO CAMPO 'INFORME SUA CIDADE'      */
-    $(function() {
-        $("#header-location").autocomplete({
-            source: "/cidade/list",
-            select: function(event, ui) {
-                $.ajax({
-                    url: "/application/mudar_cidade?cidade="+ui.item.label
-                });
             }
         });
     });

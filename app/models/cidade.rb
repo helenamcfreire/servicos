@@ -4,4 +4,6 @@ class Cidade < ActiveRecord::Base
 
   attr_accessible :nome
 
+  has_many :empresas
+
 end
