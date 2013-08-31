@@ -3,6 +3,10 @@ Servicos::Application.routes.draw do
   root :to => 'home#index'
   match ':controller(/:action(/:id))(.:format)'
 
+  match '/auth/facebook/callback' => 'sessions#create', as: :auth_callback
+  match '/auth/failure' => 'sessions#failure', as: :auth_failure
+  match '/logout' => 'sessions#destroy', as: :logout
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1250014648">
+  <component name="DataSourceManagerImpl" format="xml" hash="2418244855">
     <data-source source="LOCAL" name="Rails servicos: development" product="PostgreSQL" version="9.2.4" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC3g (build 1002)" uuid="0a3db8be-0faa-49d4-8959-f5718992917d">
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

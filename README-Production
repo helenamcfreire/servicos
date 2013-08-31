@@ -5,4 +5,6 @@ Production Stuff
     heroku config:set AWS_ACCESS_KEY_ID=(Get in Google Drive)
     heroku config:set AWS_SECRET_ACCESS_KEY=(Get in Google Drive)
 
-2 - Rodar o script de dados
+2 - Garantir que a opção {:client_options => {:ssl => {:verify => false}}} do omniauth.rb não está setada
+
+3 - Rodar o script de dados

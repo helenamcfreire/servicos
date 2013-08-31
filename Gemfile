@@ -18,6 +18,10 @@ gem 'bootstrap-will_paginate'
 gem 'paperclip'
 gem 'aws-sdk'
 
+#Autenticacao com facebook
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
