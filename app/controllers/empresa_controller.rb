@@ -1,4 +1,4 @@
-class EmpresaController < ApplicationController
+class EmpresaController < HomeController
 
 
   def new
@@ -11,6 +11,10 @@ class EmpresaController < ApplicationController
     @empresa.save
 
     render :new
+  end
+
+  def detail
+      @empresa_servico = EmpresaServico.find(params[:id])
   end
 
 

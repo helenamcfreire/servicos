@@ -1,0 +1,137 @@
+<div class="rooster-root"></div>
+
+<%= render "/header" %>
+
+<div class="span12 flash-container">
+</div>
+
+
+<div id="og_pro_photo_prompt" class="container"></div>
+
+<div id="rooms" class="container">
+  <div id="room" class="panel-border clearfix">
+    <div id="back_to_search_container" class="panel-header-gray clearfix">
+      <ul class="share-box unstyled">
+        <li class="share-item">
+          <!-- Twitter -->
+        </li>
+        <li class="share-item">
+          <!-- Google Plus -->
+        </li>
+        <li class="share-item">
+          <!-- Facebook -->
+        </li>
+      </ul>
+    </div>
+
+    <div id="left_column">
+
+      <div id="main_content" class="space2">
+        <div class="middle panel-border clearfix">
+          <ul class="nav nav-tabs panel-background-gray">
+            <li class="photos active">
+              <a href="#"><%= @empresa_servico.servico.nome %></a>
+            </li>
+          </ul>
+          <div class="tab-content panel-padding clearfix">
+
+            <div style="width: 220px; height: 160px; float: left; margin-right: 10px">
+              <img src="<%= @empresa_servico.empresa.image.url %>" width="220px" height="160px"/>
+            </div>
+            <div style="float: left; width: 400px;">
+              <h3><%= @empresa_servico.empresa.nome %></h3>
+              <p>A Dr. Resolve foi fundada por seu Diretor Presidente, Sr David Pinto, empresário notório no ramo de venda de serviços ao varejo e, especialmente, em franquias, com ampla experiência neste setor.
+                Em um ano transformou a empresa na maior rede de franquias de reparos e reformas do Brasil e também na que mais cresceu comparada a todas as outras marcas.
+              </p>
+              <h4>
+                                    <span id="display_address">
+                                          <%= @empresa_servico.empresa.endereco %>
+                                    </span>
+              </h4>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="reputation" class="space2">
+        <a name="reputation-mark"></a>
+        <div id="reputation_middle" class="clearfix middle panel-border">
+          <ul id="reputation_sub_nav" class="nav nav-tabs panel-background-gray">
+            <li class="active" id="this_hosting_reviews_link">
+              <a href="#">Avaliações (<span>24</span>)</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content panel-padding clearfix">
+            <div id="this_hosting_reviews" class="tab-pane rep_content active">
+
+              <div class="clear"></div>
+              <ul class="unstyled reviews-list clearfix">
+                <li class="reviews-list-item space1 clearfix" id="review_6488012">
+                  <div class="overflow">
+                    <div class="right">
+                      <div class="speech-bubble">
+                        <p class="message">
+                          Mi primera experiencia con Airbnb... y fue excelente.
+                          <br>Marìa das Gracas es una atenta anfitriona, buena persona, muy agradable y cordial.
+                          <br>El apartamento està bien ubicado, en una calle tranquila y a sòlo dos cuadras de la playa de Copacabana. La habitaciòn es amplia y còmoda y, muy importante, con un buen colchon. Buen desayuno brasilero, con la dueña de casa siempre atenta a los gustos de sus huèspedes.
+                          <br>Lo recomiendo como una muy buena opciòn, y màs econòmica, que la de los servicios estandarizados de hoteles e incluso de hostels.
+                        </p>
+                        <span class="date">Agosto 2013</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="right_column">
+
+      <form accept-charset="UTF-8" action="https://www.airbnb.com.br/payments/book?hosting_id=811039" class="info instant-book" id="book_it_form" method="post">
+
+        <div id="book_it" class="panel-border space2">
+
+          <div class="panel-header-light">
+
+            <div id="pricing" class="book_it_section">
+
+              <h2 id="price_amount" style="text-align: center">R$ <%= @empresa_servico.preco %></h2>
+
+            </div>
+
+            <button type="submit" class="btn large green btn-block" id="book_it_button">
+                            <span class="instant-book">
+                                Contratar
+                            </span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+</div>

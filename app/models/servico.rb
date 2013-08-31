@@ -1,6 +1,6 @@
 class Servico < ActiveRecord::Base
 
-  attr_accessible :nome, :preco
+  attr_accessible :nome
 
   belongs_to :empresa
 

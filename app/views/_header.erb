@@ -1,49 +1,7 @@
 <div id="header" class="navbar navbar-top">
   <div class="navbar-inner">
     <div class="container container-full-width">
-      <a href="/servico/index" class="brand">ServiceS</a>
-      <ul class="nav">
-        <li id="header-search">
-          <form id="search-form">
-            <div id="search-bar">
-              <%= text_field_tag nil, session['cidade'], id: 'header-location', placeholder: 'Informe sua cidade' %>
-            </div>
-          </form>
-        </li>
-      </ul>
+      <a href="/home/index" class="brand">ServiceS</a>
     </div>
   </div>
 </div>
-
-<style>
-    .ui-autocomplete {
-        max-height: 200px;
-        overflow-y: auto;
-        /* prevent horizontal scrollbar */
-        overflow-x: hidden;
-    }
-
-        /* IE 6 doesn't support max-height
-         * we use height instead, but this forces the menu to always be this tall
-         */
-    * html .ui-autocomplete {
-        height: 200px;
-    }
-</style>
-
-<script>
-
-    /*       AUTOCOMPLETE DO CAMPO 'INFORME SUA CIDADE'      */
-    $(function() {
-        $("#header-location").autocomplete({
-            source: "/cidade/list",
-            select: function(event, ui) {
-                $.ajax({
-                    url: "/application/mudar_cidade?cidade="+ui.item.label
-                });
-            }
-        });
-    });
-
-
-</script>

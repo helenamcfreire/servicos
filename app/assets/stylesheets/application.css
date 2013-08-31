@@ -11,4 +11,8 @@
  *= require_self
  *= require_tree .
  *= require jquery-ui
+ *= require o2.0
+ *= require p1_v2
+ *= require page2
+ *= require page3
  */

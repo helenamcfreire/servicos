@@ -1,14 +1,11 @@
-class CidadeController < ApplicationController
+class CidadeController < HomeController
 
 
-  def list
+  def list_by_estado
+      cidades = Cidade.find_all_by_estado_id(params[:estado_id])
+                       .map {|cidade| Hash[ id: cidade.id, nome: cidade.nome ]}
 
-    like = param_to_like(params[:term])
-    cidades = Cidade.where('lower(nome) LIKE ?', like).order('nome')
-    .map {|servico| Hash[ id: servico.id, label: servico.nome, name: servico.nome ]}
-
-    render json: cidades
-
+      render json: cidades
   end
 
 end

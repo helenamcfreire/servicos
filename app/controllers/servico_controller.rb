@@ -1,17 +1,18 @@
 require 'will_paginate/array'
 require 'open-uri'
 
-class ServicoController < ApplicationController
+class ServicoController < HomeController
 
   def find
 
     nome_like = param_to_like(params[:nome_servico])
-    cidade_like = param_to_like(session['cidade'])
     servicos = Servico.all(:conditions => ['lower(nome) LIKE ?' , nome_like], :select => :id)
+
     @empresa_servicos = EmpresaServico.joins(:empresa => :cidade)
-                                      .where(:servico_id => servicos)
-                                      .where('lower(cidades.nome) LIKE ?' , cidade_like)
+                                      .where(:servico_id => servicos, :cidades => { :id => params[:cidade_id]})
                                       .paginate(:page => params[:page], :per_page => 10) if servicos != nil
+
+    @estados = Estado.all
 
     render :list
 

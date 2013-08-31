@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<body class=" home_view v2">
+
+<div class="rooster-root"></div>
+
+<%= render "/header" %>
+
+
+<div class="span12 flash-container"></div>
+
+<div id="hero">
+
+  <div class="search-area">
+
+    <div class="container">
+
+      <h1>Ache o serviço que você precisa.</h1>
+      <h2>Escolha dentre milhares de empresas no Brasil.</h2>
+
+      <%= form_tag({controller: "servico", action: "find"}, method: "get", class: "custom show-search-options position-left", id: "search_form") do %>
+          <div class="input-wrapper">
+            <%= text_field_tag :nome_servico, nil, class: "location", id: "servicos", placeholder: "Qual serviço você deseja?" %>
+          </div>
+          <div class="input-wrapper">
+            <%= select_tag :estado_id, options_from_collection_for_select(@estados, 'id', 'nome'),
+                           :prompt => 'Estado',
+                           :style => 'margin-bottom: 0px; height: 40px',
+                           :id => 'estados' %>
+
+          </div>
+          <div class="input-wrapper">
+            <%= select_tag :cidade_id, nil,
+                           :prompt => 'Cidade',
+                           :id => 'cidades',
+                           :style => 'margin-bottom: 0px; height: 40px' %>
+          </div>
+
+
+          <%= submit_tag "Buscar", class: "large pink btn icon-and-text position-left" %>
+      <% end %>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+    /*       AUTOCOMPLETE DO CAMPO 'QUAL SERVICO VOCE DESEJA?'     */
+    $(function() {
+        $("#servicos").autocomplete({
+            source: "/servico/list"
+        });
+    });
+
+    /*       COMBO EM CASCATA     */
+    $('#estados').change(function(){
+        $.ajax({
+            url:'/cidade/list_by_estado',
+            type:'POST',
+            data: 'estado_id=' + this.value,
+            dataType: 'json',
+            success: function(json) {
+                $('#cidades').empty();
+                $.each(json, function() {
+                    $('#cidades').append($('<option>').text(this['nome']).attr('value', this['id']));
+                });
+            }
+        });
+    });
+
+</script>

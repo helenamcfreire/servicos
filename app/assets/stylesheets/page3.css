@@ -1,0 +1,3565 @@
+.priv-button {
+    position: relative;
+    min-width: 130px;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.6em 1.0em;
+    font-size: 12px
+}
+
+.priv-button.btn {
+    font-weight: bold;
+    color: #393c3d
+}
+
+.priv-button .dropdown-menu {
+    margin-left: -1px;
+    min-width: 0;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em
+}
+
+.priv-button .dropdown-menu li>a {
+    padding: 0.6em 1.0em;
+    text-align: left;
+    line-height: normal
+}
+
+.priv-button .dropdown-menu li>a:hover .caret {
+    border-top-color: white
+}
+
+.priv-button .caret {
+    float: right;
+    vertical-align: middle;
+    margin-top: 4px
+}
+
+.priv-container.opened .dropdown-menu {
+    display: block;
+    min-width: 128px;
+    top: -1px
+}
+
+.priv-container>.icon {
+    line-height: 26px;
+    margin-left: 5px
+}
+
+.tooltip hr {
+    margin: 4px 0
+}
+
+.icon.large {
+    font-size: 18px
+}
+
+.icon.gray {
+    color: #bbb
+}
+
+input.wishlist-privacy[value="0"]+.priv-button .show-priv-everyone {
+    display: inline
+}
+
+input.wishlist-privacy[value="0"]+.priv-button .show-priv-onlyme, input.wishlist-privacy[value="0"]+.priv-button li:first-child, input.wishlist-privacy[value="0"]+.priv-button .priv-onlyme .caret {
+    display: none
+}
+
+input.wishlist-privacy[value="1"]+.priv-button .show-priv-onlyme {
+    display: inline
+}
+
+input.wishlist-privacy[value="1"]+.priv-button .show-priv-everyone, input.wishlist-privacy[value="1"]+.priv-button li:last-child, input.wishlist-privacy[value="1"]+.priv-button .priv-everyone .caret {
+    display: none
+}
+
+.vk-share-button tr {
+    line-height: normal
+}
+
+.vk-share-button td {
+    vertical-align: middle
+}
+
+.vk-icon {
+    background: url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) no-repeat 0 -167px;
+    height: 21px;
+    width: 2px
+}
+
+.vk-icon.vk-right {
+    background-position: -2px -167px;
+    width: 22px
+}
+
+.vk-border {
+    border: 1px solid #3B6798;
+    border-left: 0px
+}
+
+.vk-body {
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #7E9CBC #5C82AB #5C82AB;
+    background-color: #6D8FB3;
+    color: #FFFFFF;
+    text-shadow: #45688E 0px 1px;
+    height: 15px;
+    padding: 2px 4px 0px 6px;
+    font-family: tahoma, arial;
+    font-size: 11px
+}
+
+.vk-body:hover {
+    border-color: #92ACC7 #7293B7 #7293B7;
+    background-color: #84A1BF
+}
+
+.twitter-share-button {
+    display: block;
+    height: 18px;
+    width: 54px;
+    border: 1px solid #ccc;
+    background: url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) no-repeat 0 -86px;
+    text-indent: -9999px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+.twitter-share-button:hover {
+    border-color: #bbb;
+    background-position: 0 -104px
+}
+
+.twitter-share-button:active {
+    -webkit-box-shadow: inset 0 0 3px 3px #dedede;
+    box-shadow: inset 0 0 3px 3px #dedede
+}
+
+.pin-it-button {
+    display: block;
+    height: 20px;
+    width: 40px;
+    background: url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) no-repeat 0 -122px
+}
+
+.fb_share_area {
+    padding: 20px
+}
+
+.fb_share_area .fb_share_text {
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #848484
+}
+
+.prompt_loading_area {
+    text-align: center;
+    padding: 20px
+}
+
+.colorbox_modal {
+    width: 500px
+}
+
+.colorbox_modal h3 {
+    font-size: 16px
+}
+
+.fb_prompt {
+    clear: both;
+    padding: 20px;
+    margin: 10px 0;
+    background: #fff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #d0d0d0
+}
+
+.fb_prompt.fb_background {
+    background: #dbdfec;
+    background: -webkit-gradient(linear, center top, center bottom, from(#e3e7f1), to(#dbdfec));
+    background: -moz-linear-gradient(top, #e3e7f1, #dbdfec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe3e7f1', endColorstr='#ffdbdfec', GradientType=0);
+    line-height: 1.8em;
+    text-shadow: 0 1px 0 #ffffff;
+    -webkit-box-shadow: inset 0 0px 0px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0px 0px 1px rgba(255, 255, 255, 0.5)
+}
+
+.fb_prompt h5 {
+    font-size: 1.4em;
+    padding-bottom: 10px
+}
+
+.fb_prompt .fb-button.prompt-button {
+    left: 0px;
+    float: left;
+    margin-top: 20px
+}
+
+.fb_prompt .prompt_left {
+    float: left;
+    margin-top: 13px;
+    margin-left: 3px;
+    width: 410px
+}
+
+.fb_prompt .prompt_right {
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px
+}
+
+.fb_prompt #close_prompt {
+    float: right;
+    margin-top: -16px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: -7px
+}
+
+.fake_fb_post {
+    background-color: white;
+    width: 425px;
+    min-height: 135px;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'lucida grande';
+    font-size: 11px
+}
+
+.fake_fb_post.extrude {
+    box-shadow: 43px 19px #AEB6C4
+}
+
+.fake_fb_post.timeline {
+    border: 1px solid #C4CDE0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 412px
+}
+
+.fake_fb_post.timeline:before {
+    content: "";
+    display: block;
+    margin-left: 423px;
+    margin-top: 20px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #C4CDE0
+}
+
+.fake_fb_post.timeline:after {
+    content: "";
+    display: block;
+    margin-left: 422px;
+    margin-top: -172px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid white
+}
+
+span.fb_name {
+    color: #3B5998;
+    font-weight: bold;
+    vertical-align: top
+}
+
+.fb_blue_text {
+    color: #3B5998
+}
+
+.fb_profile_pic {
+    float: left
+}
+
+.fb_date {
+    vertical-align: top;
+    float: left
+}
+
+.timeline_heading_text_first_line {
+    vertical-align: top;
+    clear: right;
+    display: block
+}
+
+.fake_fb_post.extrude:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    margin-left: -11px;
+    margin-top: 103px;
+    border-top: 19px solid #AEB6C4;
+    border-right: 0px solid #AEB6C4;
+    border-bottom: 0px solid transparent;
+    border-left: 44px solid transparent
+}
+
+.fake_fb_post.extrude:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-left: 435px;
+    margin-top: -11px;
+    border-top: 20px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 0px solid #AEB6C4;
+    border-left: 43px solid #AEB6C4
+}
+
+.fake_fb_header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 12px;
+    border-top: 1px solid lightGrey;
+    margin-bottom: 10px
+}
+
+.fake_fb_timeline_header {
+    margin-left: 3px;
+    color: #999;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+    vertical-align: top;
+    margin-top: 3px
+}
+
+.timeline_heading_text {
+    float: left;
+    margin-left: 12px;
+    width: 350px
+}
+
+.like_comment_share {
+    background-color: #EDEFF4;
+    padding: 5px 12px;
+    margin: -8px;
+    color: #3B5998;
+    margin-top: 13px
+}
+
+.crop.hosting_picture {
+    overflow: hidden;
+    width: 90px;
+    margin-left: 13px;
+    float: left
+}
+
+.crop.hosting_picture img {
+    margin-left: -22px;
+    height: 90px
+}
+
+.crop.hosting_picture.timeline {
+    margin-left: 3px
+}
+
+.fake_fb_title {
+    color: #3B5998;
+    font-weight: bold;
+    float: right;
+    width: 309px;
+    margin-bottom: 5px
+}
+
+.fake_fb_text {
+    float: right;
+    color: gray;
+    float: right;
+    width: 309px;
+    line-height: 14px
+}
+
+.past-actions-modal .fb_iframe_widget {
+    display: block
+}
+
+.past-actions-modal .fb_iframe_widget iframe {
+    position: static
+}
+
+.past-actions-modal .fb_iframe_widget span {
+    display: block;
+    height: auto !important;
+    width: auto !important
+}
+
+.past-actions-modal.modal {
+    width: 301px;
+    height: 500px;
+    overflow-y: hidden
+}
+
+.past-actions-modal #plugin-done {
+    min-height: none
+}
+
+#colorbox #cboxClose {
+    top: 10px;
+    right: 2px;
+    left: auto;
+    background: none;
+    text-indent: 0px;
+    opacity: 0.2;
+    font-size: 20px
+}
+
+#colorbox #cboxClose:hover {
+    opacity: 0.3
+}
+
+#colorbox #cboxLoadedContent {
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.9) 100%);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.9) 100%);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+#close_prompt:hover {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer
+}
+
+#calendar2 table td {
+    border-color: #FFFFFF #CCCCCC #CCCCCC #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    margin: 0;
+    padding: 2px 2px 4px;
+    text-align: right;
+    width: 45px;
+    height: 45px
+}
+
+#calendar2 table td div.extra {
+    font-size: 12px;
+    margin-top: 5px
+}
+
+#calendar2 table th {
+    border-color: #FFFFFF #CCCCCC #CCCCCC #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 700;
+    margin: 0;
+    padding: 2px 2px 4px;
+    text-align: center;
+    width: 48px;
+    background-color: #DEDEDE
+}
+
+#calendar2 table td span.dom {
+    color: #666666;
+    float: right;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700
+}
+
+#calendar2 td.is_dirty span {
+    text-decoration: underline
+}
+
+#calendar2 td.clickable {
+    cursor: pointer
+}
+
+#calendar2 td.selected {
+    border: 2px solid black
+}
+
+#calendar2 {
+    width: 380px
+}
+
+#calendar2 .available {
+    background-color: #acdba8
+}
+
+#calendar2 .unavailable {
+    background-color: #e07272
+}
+
+#calendar2 .in_the_past {
+    background-color: #e1e1e1
+}
+
+#calendar2 .key {
+    width: 30px;
+    margin-right: 5px;
+    float: left
+}
+
+#calendar2 .key-text {
+    margin-right: 10px;
+    float: left
+}
+
+#calendar2 #legend {
+    margin-top: 5px
+}
+
+#lwlb_overlay[id] {
+    position: fixed
+}
+
+#lwlb_overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #000;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80)
+}
+
+div.lwlb_lightbox {
+    position: absolute;
+    z-index: 10001;
+    border: 1px solid #fff;
+    background: #FDFCE9;
+    display: none;
+    padding: 10px;
+    left: 350px;
+    top: 0
+}
+
+div.lwlb_lightbox2 {
+    position: absolute;
+    z-index: 10001;
+    display: none;
+    left: 220px;
+    top: 0
+}
+
+div.lwlb_lightbox2 div.header {
+    margin-bottom: 10px
+}
+
+div.lwlb_lightbox2 div.header .h1 {
+    float: left;
+    width: 500px
+}
+
+div.lwlb_lightbox2 div.header .close {
+    float: right;
+    width: 10px
+}
+
+div.lwlb_lightbox2 div.header .h1 h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3e3e3e
+}
+
+#lwlb_contact {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 3px solid black
+}
+
+#lwlb_contact .lwlb-screen {
+    display: none
+}
+
+#lwlb_contact #dashboard_v2, #cboxLoadedContent #dashboard_v2 {
+    border: 0
+}
+
+#lwlb_contact .content-row, #cboxLoadedContent .content-row {
+    zoom: 1
+}
+
+#lwlb_contact .content-row:after, #cboxLoadedContent .content-row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+#lwlb_contact .content-row-wrapper, #cboxLoadedContent .content-row-wrapper {
+    position: relative
+}
+
+#lwlb_contact .parameter-block, #cboxLoadedContent .parameter-block {
+    margin-right: 10px;
+    float: left
+}
+
+#lwlb_contact .parameter-block label, #cboxLoadedContent .parameter-block label {
+    width: auto !important;
+    float: none !important;
+    text-align: left !important
+}
+
+#lwlb_contact .full-field-block, #cboxLoadedContent .full-field-block {
+    margin-top: 15px
+}
+
+#lwlb_contact .full-field-block span.addendum, #cboxLoadedContent .full-field-block span.addendum {
+    float: right;
+    margin-top: 5px;
+    color: #aaa
+}
+
+#lwlb_contact .full-field-block span.addendum label, #cboxLoadedContent .full-field-block span.addendum label {
+    color: #393c3d;
+    width: auto;
+    margin-top: -5px;
+    float: left
+}
+
+#lwlb_contact .full-field-block label, #cboxLoadedContent .full-field-block label {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: left
+}
+
+#lwlb_contact .full-field-block span.suggestion, #cboxLoadedContent .full-field-block span.suggestion {
+    display: block
+}
+
+#lwlb_contact .full-field-block span.suggestion:first-child, #cboxLoadedContent .full-field-block span.suggestion:first-child {
+    margin-top: 0
+}
+
+#lwlb_contact .full-field-block textarea, #cboxLoadedContent .full-field-block textarea {
+    width: 445px;
+    height: 80px
+}
+
+#lwlb_contact .full-field-block input[type="text"], #cboxLoadedContent .full-field-block input[type="text"] {
+    width: 200px
+}
+
+#lwlb_contact .full-field-block input[type="text"].full, #cboxLoadedContent .full-field-block input[type="text"].full {
+    width: 445px
+}
+
+#lwlb_contact .full-field-block input[type="password"], #cboxLoadedContent .full-field-block input[type="password"] {
+    margin-left: 0
+}
+
+#lwlb_contact .full-field-block .action_button, #cboxLoadedContent .full-field-block .action_button {
+    float: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-right: 0;
+    cursor: pointer
+}
+
+#lwlb_contact .full-field-block table, #cboxLoadedContent .full-field-block table {
+    margin: 0 auto 20px auto
+}
+
+#lwlb_contact .full-field-block th, #cboxLoadedContent .full-field-block th {
+    text-align: right
+}
+
+#lwlb_contact .full-field-block.inline-suggestion h3, #lwlb_contact .full-field-block.inline-suggestion span.suggestion, #cboxLoadedContent .full-field-block.inline-suggestion h3, #cboxLoadedContent .full-field-block.inline-suggestion span.suggestion {
+    display: inline-block
+}
+
+#lwlb_contact .submit-or-cancel.sent, #cboxLoadedContent .submit-or-cancel.sent {
+    margin: 0 0 0 10px;
+    padding: 5px 15px;
+    background: url(https://a1.muscache.com/airbnb/static/messaging/check-24px-0c65da180290b0e2a4f577e72045c313.png) no-repeat 0 0;
+    display: inline-block
+}
+
+#lwlb_contact .submit-or-cancel.sent input, #lwlb_contact .submit-or-cancel.sent span, #lwlb_contact .submit-or-cancel.sent button, #cboxLoadedContent .submit-or-cancel.sent input, #cboxLoadedContent .submit-or-cancel.sent span, #cboxLoadedContent .submit-or-cancel.sent button {
+    display: none
+}
+
+#dashboard_v2 #lwlb_contact_login .submit-or-cancel {
+    text-align: center
+}
+
+#dashboard_v2 #lwlb_contact_login #login_email {
+    width: 210px
+}
+
+#dashboard_v2 #lwlb_contact_login label {
+    width: 140px
+}
+
+.input-tiny {
+    width: 50px
+}
+
+.clear {
+    clear: both
+}
+
+#room {
+    background-color: #fafafa;
+    position: relative
+}
+
+#room .middle {
+    clear: both;
+    margin: 10px
+}
+
+#room .fb_background {
+    background: #dbdfec;
+    background: -webkit-gradient(linear, center top, center bottom, from(#e3e7f1), to(#dbdfec));
+    background: -moz-linear-gradient(top, #e3e7f1, #dbdfec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe3e7f1', endColorstr='#ffdbdfec', GradientType=0);
+    -webkit-box-shadow: inset 0 0px 0px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0px 0px 1px rgba(255, 255, 255, 0.5)
+}
+
+#room .fb_background p {
+    color: #848484
+}
+
+#right_column .middle {
+    margin-bottom: 20px
+}
+
+.middle {
+    background-color: white
+}
+
+.spinner {
+    background: url(https://a0.muscache.com/airbnb/static/spinner-2b6f2c9459f400addfb341d92307d7bf.gif) left top no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block
+}
+
+#content_flag {
+    margin-right: 10px;
+    margin-top: 9px;
+    float: right;
+    width: 45px
+}
+
+#main_content .tab-content {
+    padding: 7px
+}
+
+.neighborhood {
+    color: #757569;
+    font-style: italic
+}
+
+.approx {
+    font-style: italic;
+    font-size: 15px
+}
+
+#left_column {
+    width: 683px;
+    float: left;
+    clear: left
+}
+
+.main_content {
+    width: 641px;
+    min-height: 470px;
+    float: left
+}
+
+#map {
+    float: none
+}
+
+#pano {
+    height: 454px
+}
+
+#street-view p {
+    padding: 0 12px
+}
+
+#free_photography {
+    position: absolute;
+    width: 639px;
+    text-align: center;
+    padding-top: 359px;
+    z-index: 9999
+}
+
+#room_snapshot {
+    width: 680px;
+    float: left
+}
+
+#room_snapshot h1 {
+    padding: 0 0 0 21px;
+    float: left;
+    width: 693px
+}
+
+#room_snapshot h1 .overflow {
+    float: left;
+    overflow: hidden;
+    max-width: 659px;
+    height: 36px
+}
+
+#room_snapshot h4 {
+    font-weight: normal;
+    padding: 0 4px 0 23px;
+    float: left
+}
+
+.property-type, .property-type:hover {
+    color: #393c3d
+}
+
+#display_address {
+    color: #A3B119
+}
+
+#display_address a {
+    color: #A3B119
+}
+
+#back_to_search_container {
+    margin-bottom: 5px
+}
+
+#back_to_search_container .share-item {
+    float: left;
+    margin-left: 8px
+}
+
+#back_to_search_container .email-share {
+    height: 20px;
+    width: 29px;
+    display: block
+}
+
+#back_to_search_container .email-share.btn.mini {
+    padding: 0
+}
+
+#back_to_search_container .email-share .icon {
+    font-size: 1.5em;
+    line-height: 15px
+}
+
+ul.unstyled.share-box {
+    margin-top: 5px
+}
+
+#action_buttons {
+    width: 295px;
+    float: left
+}
+
+#action_buttons ul {
+    float: right;
+    padding: 0;
+    margin-right: 10px
+}
+
+#action_buttons li {
+    float: left;
+    margin-left: 12px;
+    margin-top: 3px;
+    text-align: center;
+    cursor: pointer
+}
+
+#action_buttons li a.icon {
+    background: transparent url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) left top no-repeat;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 auto
+}
+
+#action_buttons .review_count a.icon {
+    background-position: -90px top;
+    color: #393c3d;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none
+}
+
+#action_buttons .superhost a.icon {
+    background-position: left top
+}
+
+#action_buttons .translate a.icon {
+    background: transparent
+}
+
+#action_buttons .guidebook a.icon {
+    background: transparent url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) no-repeat 0 -142px;
+    height: 25px;
+    width: 25px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    position: relative;
+    left: 3px
+}
+
+#action_buttons li p {
+    text-align: center;
+    color: #1D95CB
+}
+
+#action_buttons li p:hover {
+    text-decoration: underline
+}
+
+#description_text {
+    width: 60%;
+    overflow: auto;
+    float: left
+}
+
+#description_text_wrapper {
+    overflow: auto;
+    padding-right: 15px;
+    clear: left
+}
+
+#description_details {
+    width: 40%;
+    float: left;
+    border: 1px solid #d9d9d6;
+    margin: 0 -10px 0 -1px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden
+}
+
+#description_details td.value {
+    border-left: 0;
+    width: 100px;
+    text-align: right;
+    word-wrap: break-word;
+    font-weight: bold
+}
+
+#new_translate_button p.gBrandingText {
+    display: none;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0 0 0 10px
+}
+
+#new_translate_button p.gBrandingText img {
+    vertical-align: middle
+}
+
+#amenities-panel {
+    padding: 10px 0;
+    height: 243px
+}
+
+#amenities-panel ul {
+    width: 202px;
+    float: left
+}
+
+#amenities-panel li {
+    padding: 3px 0 3px
+}
+
+.icon.green {
+    color: #08ce03
+}
+
+.icon.icon-large {
+    font-size: 1.4em
+}
+
+.icon.red {
+    color: #f00
+}
+
+#house_rules {
+    padding: 10px 0;
+    min-height: 243px
+}
+
+#left_column .property_agreement {
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+#guidebook {
+    padding: 9px
+}
+
+#guidebook .question {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+#guidebook .answer {
+    padding: 8px;
+    border: 1px solid #D9D9D6;
+    margin-bottom: 15px
+}
+
+#guidebook .places_helper {
+    font-size: 11px;
+    font-style: italic;
+    color: #AAA
+}
+
+#this_hosting_reviews {
+    position: relative
+}
+
+#reputation .middle {
+    position: relative
+}
+
+#review_stats {
+    min-height: 85px;
+    margin: 15px 0 20px
+}
+
+#review_stats .stats {
+    float: left;
+    overflow: hidden;
+    display: block
+}
+
+#review_stats #stats_left {
+    width: 210px;
+    margin: 0 40px 0 155px
+}
+
+#review_stats #stats_right {
+    width: 220px
+}
+
+#satisfaction {
+    height: 85px;
+    width: 139px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAABRCAYAAAANfj6IAAAE4ElEQVR42u2dzUtUYRTGX6%2BajjN%2BOy0EhaSNA4EgBNGs1PErEJRSciFhq1YRtGjj0j8gorBNuKtoka0F8RuGFiq4yAJBEFyM5vc4fo2d5zIzXPXe251o9z4PPEwpbq7PnN855955NZRocXHxxujo6G3xF3FcXKosuri4oDU2ZCAkZ2dnx8lkcurk5OTh8fGxT1HUFRni0NbWltrb26uWoCgJDa8KZRuUbr%2FfrxCWo6MjFY%2FHeVWo60ERBj2tr683WYSwMCiUU0UJ5Ofnq8HBQZVIJFQsFlN1dXUNvDTU1aCY1aSmpkYNDQ2pxsZGVVlZObmwsHCRtjS8tL5ekwy8MoOSk5Ojzs%2FPVXFxsRoYGFBAUUNDA02rUChUKxF5ZgbFMMwXJSOyOj09VZh%2BZEymNTeygL5VcvHRTEhubi4hTNlqf38f0%2FA3I715oyir0I6gokhQ1sPh8HeDl4RyCsru7i7C8hldCYNCOUq29erw8PArg0K5Yufg4GC9paUlmtmjUJQbdsygsJml7ISgSEX5KvlIsqJQrtiJRCLR9NcZFOpaUHZ2di5hh0GhXKedNHbYo1C22MGSzYodVhTKE3YYFMp22rmKHQaFsp12Wltbo1e%2Fzx6FygRle3sbj5hcww4rCuUJO5eCwg866f0BLzysBuy0tbVF7ULEikKZTzg6TTvsUSjP2MlUFJZfvbGD52OxZHPCDtFDecIOg0KZwr0d%2BYSoI3YyPQqtN3YkKK7YYUUhdjxh51pQ%2BC7Tr6J4wQ7HY81X9liyATvt7e3Rv1YfVhI9Dezg3o4X7LBH4bTjCTsMiubYwZKto6Mj6uVnMj0Ky7Fe2MG04%2FRIgWtF4QXUa9rBvR2v2CF6NMdOZ2dn1OvPcTOrmXEWjtuTbKwo1D9NO%2BxRNO5P8CongSayWvfz%2FaWXEBI59VMVFRU9yioofJfpZRxhX1ZWhqb2MSsK5Sic%2FIk9ihwVWzs%2FP38vq6DwnaaXEZaKigr86vuyQg%2FDopexRykpKcGv%2Ffnc3Fwu0UM5NrTATyosYaKHdjSOtM8GP6womgofSEdFkennmRf8cDzWuKHFa2lpKV4j3MzS%2FwU%2FRI%2Fm%2BAkEAmhsn8zOzvrYzNKu%2BMGmVhTxtEeh9BTwU15ejsD0saLQrss3%2FOU3wU%2F%2FzMyMjz0K5bh8szS1XZx6aNc7yn%2BbfrhHoU38%2BHw%2B4Kd7eno6QPRQjvjBBIQHmpzww2aWNo2dSgo%2F%2FawolOvyrbCwUOXl5T0Q%2FFTweRTacfmGphb4kf93s6JQrlUFyze76Yc9Cn1p%2BikoKMBHOSJTU1NBVhTKUcBPVVUV%2FvmQFYV2rSop%2FPTzpiDl2qcIeoCg8OTkZC3RQ2WFH97roW3xg0ckrdMP0HOKb%2BLcDIqy4kcWcHcFP7fSQfmJ04txbgbfTbR1pR8MBjNVxZAvfMJ5GUgQRaWF4pHCjzn9GGNjYx82NzdVIpFQfr%2BfV4jKNLSgjByPcWdiYiJkjIyMJOQ8rxdra2uZsMiNIV4pyjr99GHqSXZ1db2LxWIvV1dX1cbGhskoBIbW21B6%2BkFQsHE76%2BnpeTs8PFy9srIy9EO0vLysaHppaemXVJb36T0KDn07GR8f%2F93b2%2Fta%2FkDy%2FaampqD4Jq21g83NzY2ShzfWzawZFnFcvJ%2FyHq21kQEcCpj8AxG0yvM3EoWiAAAAAElFTkSuQmCC) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 10px
+}
+
+#satisfaction_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #959595;
+    text-shadow: 0 1px 0 #fcfcfc;
+    display: block;
+    line-height: 0.9em;
+    font-size: 11px;
+    letter-spacing: 0em;
+    margin: 20px 0 0 -7px
+}
+
+#review_stats .stats li {
+    padding: 0 0 12px 0;
+    overflow: hidden
+}
+
+#review_stats .attribute {
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #333637;
+    letter-spacing: -0.02em;
+    padding-left: 1px;
+    width: 120px;
+    margin-right: 6px;
+    float: left;
+    display: block
+}
+
+#right_column {
+    width: 294px;
+    float: left;
+    padding: 0
+}
+
+#right_column .verified_icon {
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAMAAAAYXScKAAAAhFBMVEUAAABxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBxqFBzqk9zqk91rE51rE52rk14sEx6sUt8s0p9tUl%2Ft0iBuUaDu0WEvUSGv0OKwkGLxECNxj%2BUykubzVei0WOx2Hu424e%2F35PG45%2FN5qvU6rfj8c%2Fq9Nv4%2B%2FP%2F%2F%2F%2FA5bl2AAAAEXRSTlMAECAwQFBgcICPn6%2B%2Fz9%2Fv7%2B%2F5YNgAAADHSURBVBhXXdHZFoIgEIDhoQw3bEGMDBnbN97%2F%2FcJQhP4LDnwXnjMjgIskWZYmEJUwLo%2Bq3e%2BKpTdSig5dqs4nrFqckxVxqDCsLQbNDxgnKMBiF0D%2FfF1QrwHS4KP925gPYrMCpiMcVOXAh%2Ff55PFibwxqe96NuY54Rq8v%2B77NaHVrz4dxjagZlMOwzxDxmAGVOPKEKJZANtqxR8XsxCuBUZr%2Ftlk0kTbUrbJo5vk6Tqe1p5uD806ug79E0ooLWfOSwl%2BLhPj7Fxg3J9fdeqC8AAAAAElFTkSuQmCC) no-repeat 0 0;
+    margin: 0 3px 0 0
+}
+
+#charity_supporter {
+    color: #959595;
+    position: relative;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7)
+}
+
+#charity_supporter .badge {
+    width: 96px;
+    height: 82px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 16px
+}
+
+#charity_supporter .middle {
+    padding-left: 115px
+}
+
+#charity_supporter p {
+    display: table-cell;
+    height: 49px;
+    vertical-align: middle
+}
+
+#charity_supporter .percentage {
+    font-weight: bold;
+    color: #e50086
+}
+
+#charity_supporter.VIVA_CON_AGUA .badge {
+    background-image: url(https://a0.muscache.com/airbnb/static/page3/p3_charity_badge.VIVA_CON_AGUA-e3109b656d8a248f67cbd4ca2929708e.png)
+}
+
+#charity_supporter.HOSPITALITY_CLUB .badge {
+    background-image: url(https://a1.muscache.com/airbnb/static/page3/p3_charity_badge.HOSPITALITY_CLUB-43b8ae1fc40334f8d43b1e89dc91b35d.png)
+}
+
+.related_listings_content ul {
+    min-height: 80px;
+    max-height: 450px;
+    overflow: auto
+}
+
+.related_listings_content li {
+    padding: 6px 10px;
+    border-bottom: 1px dotted #d1d1d1
+}
+
+.related_listings_content li:last-child {
+    border-bottom: none
+}
+
+.connections_info h4, .related_listings_content h6 {
+    padding: 8px 10px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 10px
+}
+
+.related_listings_content h6.loading {
+    border-bottom: none;
+    padding-top: 18px
+}
+
+.related_listings_content .related_listing_left {
+    width: 91px;
+    float: left
+}
+
+.related_listings_content .related_listing_left a {
+    display: block
+}
+
+.related_listings_content .related_listing_right {
+    width: 123px;
+    float: left;
+    overflow: hidden;
+    padding: 0px 5px 0 10px
+}
+
+.connections_info li {
+    padding-bottom: 10px;
+    margin: 0 10px 10px 10px;
+    clear: left
+}
+
+.connections_info li:last-child {
+    margin-bottom: 0px
+}
+
+#more-connections {
+    margin-top: 15px;
+    display: block;
+    text-align: center
+}
+
+#more-count {
+    padding: 1px 6px;
+    background: #BFBFB5;
+    color: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px #AFAFA6;
+    -webkit-box-shadow: 1px 1px 8px #888 inset;
+    box-shadow: 1px 1px 8px #888 inset
+}
+
+.connections_info .contact-img {
+    float: left;
+    margin-right: 10px
+}
+
+#sublet_it {
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    background: -webkit-gradient(linear, center top, center bottom, from(#dbe7ef), to(#fff));
+    background: -moz-linear-gradient(top, #dbe7ef, #fff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbe7ef', endColorstr='#ffffffff', GradientType=0)
+}
+
+#price_amount {
+    font-size: 40px
+}
+
+#payment_period {
+    width: 93px;
+    position: absolute;
+    top: 10px;
+    right: 0
+}
+
+#book_it {
+    background-color: #ffffff;
+    margin: 10px 10px 20px 10px
+}
+
+.book_it_section {
+    border-bottom: 1px dotted #d1d1d1;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    position: relative
+}
+
+#book_it_status {
+    position: relative
+}
+
+#book_it_enabled {
+    background: transparent
+}
+
+#book_it_disabled_message {
+    text-align: center;
+    font-weight: bold
+}
+
+.date_section {
+    width: 90px;
+    float: left;
+    margin-right: 5px
+}
+
+.date_section input {
+    width: 75px
+}
+
+.num_guests_section {
+    width: 50px;
+    float: left
+}
+
+#book_it_form {
+    margin-bottom: 0
+}
+
+#book_it_form .book-it {
+    display: block
+}
+
+#book_it_form .btn-contact-me {
+    display: none
+}
+
+#book_it_form .instant-book {
+    display: none
+}
+
+#book_it_form.instant-book .book-it {
+    display: none
+}
+
+#book_it_form.instant-book .btn-contact-me {
+    display: none
+}
+
+#book_it_form.instant-book .instant-book {
+    display: block
+}
+
+#book_it_form.contact-me #book_it_button {
+    display: none
+}
+
+#book_it_form.contact-me .btn-contact-me {
+    display: block
+}
+
+#book_it_form.contact-me .instant-book {
+    display: none
+}
+
+#subtotal_area p {
+    margin-bottom: -5px
+}
+
+#subtotal_area .per-month {
+    font-size: 12px
+}
+
+#subtotal {
+    font-size: 30px;
+    color: #cccccc
+}
+
+#instant_book_arrow:hover {
+    cursor: pointer
+}
+
+#book_it_status .gray_arrow {
+    background-position: -25px 0 !important
+}
+
+#book_it_wrapper {
+    position: relative;
+    clear: both;
+    padding: 0
+}
+
+#show_more_subtotal_info {
+    color: #666666;
+    margin-top: 6px
+}
+
+#user .play {
+    position: absolute;
+    z-index: 3;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    text-shadow: -1px -1px 1px black;
+    padding: 5px 7px;
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -17px;
+    background: black;
+    background: -webkit-gradient(linear, center top, center bottom, from(#2f3334), to(#000));
+    background: -moz-linear-gradient(top, #2f3334, #000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2f3334', endColorstr='#ff000000');
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+#user {
+    position: relative
+}
+
+#user a:hover img {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90)
+}
+
+#user .profile_pic {
+    width: 236px;
+    margin: 10px auto 5px;
+    position: relative
+}
+
+#user.video #image_wrapper {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+#user.video #image_wrapper #big_play_button {
+    background: url(https://a1.muscache.com/airbnb/static/landing_pages/rentyourplace/play-arrow-0de9d0fcf57de7f57565d69d716e1ff1.png) no-repeat scroll left top transparent;
+    height: 52px;
+    left: 50%;
+    margin-left: -29px;
+    margin-top: -21px;
+    position: absolute;
+    top: 50%;
+    width: 59px;
+    display: none
+}
+
+#user.video #image_wrapper #big_play_button:hover {
+    display: block;
+    cursor: pointer
+}
+
+#user.video #image_wrapper:hover #big_play_button {
+    display: block !important
+}
+
+#user.video #image_wrapper:hover img {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90)
+}
+
+#user .user_name {
+    text-align: center
+}
+
+#show_more_user_info1 {
+    display: block;
+    text-align: center
+}
+
+#more_info1 {
+    display: none;
+    margin: 5px -15px 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #d9d9d9
+}
+
+#more_info1 li {
+    padding: 5px 0
+}
+
+#profile_video_wrapper {
+    height: 228px
+}
+
+#profile_video_wrapper .BrightcoveExperience {
+    background-color: #000000
+}
+
+#profile_video_wrapper.show_video {
+    display: block
+}
+
+#profile_video_wrapper.show_video #small_play_button {
+    background: #f1f1f1;
+    background: -webkit-gradient(linear, center top, center bottom, from(#efefef), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #efefef, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefefef', endColorstr='#fff1f1f1', GradientType=0);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 1px 3px #222;
+    box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 1px 3px #222
+}
+
+#video_bar {
+    border: 1px solid #333333;
+    border-bottom: 1px solid #282828;
+    vertical-align: middle;
+    background: #333;
+    background: -webkit-gradient(linear, center top, center bottom, from(#4f4f4f), to(#333));
+    background: -moz-linear-gradient(top, #4f4f4f, #333);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f4f4f', endColorstr='#ff333333', GradientType=0);
+    -webkit-box-shadow: inset 0 1px 0 0 #616161;
+    box-shadow: inset 0 1px 0 0 #616161
+}
+
+#watch_video {
+    width: 176px;
+    padding: 8px 0;
+    border-right: 1px solid #333333;
+    float: left
+}
+
+#watch_video span {
+    font-size: 12px;
+    color: white;
+    text-shadow: 0 -1px 1px #000000;
+    font-weight: 600;
+    padding-top: 15px;
+    display: block;
+    white-space: nowrap
+}
+
+#view_profile_icon {
+    padding: 8px 0;
+    width: 45px;
+    height: 15px;
+    padding-top: 22px;
+    float: left;
+    display: block;
+    border-left: 1px solid #616161;
+    background: transparent url(https://a0.muscache.com/airbnb/static/icons/profile-b89e775b4f6f4bd81e8c42deeb330678.png) center center no-repeat
+}
+
+#small_play_button {
+    height: 27px;
+    width: 33px;
+    float: left;
+    margin: 0 8px;
+    border: 1px solid #671A44;
+    background: #d91b78;
+    background: -webkit-gradient(linear, center top, center bottom, from(#dc2880), to(#d91b78));
+    background: -moz-linear-gradient(top, #dc2880, #d91b78);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdc2880', endColorstr='#ffd91b78', GradientType=0);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 1px 3px #222;
+    box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 1px 3px #222
+}
+
+#small_play_button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 0 3px #e44b9c;
+    box-shadow: inset 0 1px 0 0 #e44b9c, inset 0 -1px 0 0 #de1f89, 0 0 3px #e44b9c
+}
+
+#small_play_button #arrow {
+    height: 100%;
+    width: 100%;
+    background: url(https://a1.muscache.com/airbnb/static/uiwidgets/play-button-b53af9532e9be83354b4cd4894045b42.png) 10px center no-repeat
+}
+
+#small_play_button.pause {
+    border: 1px solid #333333;
+    background: #f1f1f1;
+    background: -webkit-gradient(linear, center top, center bottom, from(#efefef), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #efefef, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefefef', endColorstr='#fff1f1f1', GradientType=0);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 #efefef, 0 1px 3px #222;
+    box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 #efefef, 0 1px 3px #222
+}
+
+#small_play_button.pause:hover {
+    -webkit-box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 #efefef, 0 0 3px #fefefe;
+    box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 #efefef, 0 0 3px #fefefe
+}
+
+#small_play_button.pause #arrow {
+    background-position: 11px center;
+    background-image: url(https://a2.muscache.com/airbnb/static/icons/pause-23e7fad62fda0d55befc53b8cc509a77.png)
+}
+
+.host_responsiveness_list .icon {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 10px 10px 0 3px;
+    color: #ccc;
+    font-size: 2.5em
+}
+
+.host_responsiveness_list h6 {
+    margin-left: 45px
+}
+
+.host_responsiveness_list li {
+    border-top: 1px dotted #e7e7e7
+}
+
+.host_responsiveness_list li:first-child {
+    border-top-width: 0
+}
+
+.image-placeholder {
+    position: absolute
+}
+
+img.replaced {
+    height: 426px;
+    width: 639px
+}
+
+#new_hosting_actions {
+    border: 8px solid #fbe51b;
+    background: #fff9c4;
+    margin-bottom: 15px;
+    padding: 15px 20px
+}
+
+#new_hosting_actions h2 {
+    line-height: 1em;
+    font-size: 18px;
+    padding: 3px 0
+}
+
+#new_hosting_actions .smaller {
+    font-size: 14px;
+    color: #9e9e9e;
+    font-variant: italic
+}
+
+#new_hosting_actions .toolbar_separator {
+    height: 1px;
+    border: 0;
+    background: #fbe51b;
+    padding: 0 20px;
+    margin: 0
+}
+
+#new_hosting_actions .fl_left {
+    display: block;
+    float: left
+}
+
+#new_hosting_actions .facebook_wrap {
+    margin-top: 6px
+}
+
+#new_hosting_actions .facebook_wrap .smaller {
+    font-weight: bold;
+    line-height: 30px
+}
+
+#new_hosting_actions #facebook_share {
+    margin-right: 1ex;
+    font-size: 14px
+}
+
+#new_hosting_actions #facebook_share span {
+    margin-left: 11px
+}
+
+#new_hosting_actions #facebook_share img {
+    margin-bottom: -5px;
+    margin-left: -16px;
+    margin-top: -5px
+}
+
+#new_hosting_actions .warning-text {
+    background: url(https://a0.muscache.com/airbnb/static/uiwidgets/warning_triangle_yellow-2b68470ddd2c2b528cb33840cfd8df49.png) left top no-repeat;
+    padding-left: 40px;
+    font-size: 2em
+}
+
+#new_hosting_actions .overview-link {
+    float: right;
+    font-size: 2em;
+    padding: 3px 0
+}
+
+#room .previously-messaged .middle {
+    background: #e5e5e5;
+    background: -webkit-gradient(linear, center top, center bottom, from(#f6f6f6), to(#e5e5e5));
+    background: -moz-linear-gradient(top, #f6f6f6, #e5e5e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6f6f6', endColorstr='#ffe5e5e5', GradientType=0)
+}
+
+.country_or_village #per_night {
+    font-size: 13px;
+    color: #666;
+    float: right;
+    display: block;
+    margin: 9px 0 0 10px
+}
+
+#per_month {
+    display: none
+}
+
+.country_or_village #book_it_status {
+    padding-top: 18px !important
+}
+
+.country_or_village #subtotal_area, .country_or_village #show_more_subtotal_info, .country_or_village #book_it_disabled, .country_or_village .date_section, .country_or_village .num_guests_section {
+    display: none !important
+}
+
+#lwlb_contact {
+    top: 50px
+}
+
+#lwlb_contact .verification-flow-container .verification-flow-step {
+    top: -39px
+}
+
+#lwlb_contact .lwlb_show_multi_messaging_post_message h2 {
+    background: url(https://a1.muscache.com/airbnb/static/messaging/check-24px-0c65da180290b0e2a4f577e72045c313.png) no-repeat 10px 50%;
+    padding-left: 44px
+}
+
+#lwlb_contact .create-with-email-expand {
+    text-align: center
+}
+
+#lwlb_contact .forgot-password-link {
+    margin-left: 0.5em
+}
+
+.error-block {
+    display: none
+}
+
+.error-block span {
+    display: none
+}
+
+.error-block.contacted-before, .error-block.not-available, .error-block.other {
+    display: block
+}
+
+.error-block.contacted-before span.contacted-before, .error-block.not-available span.not-available, .error-block.other span.other {
+    display: block
+}
+
+#lwlb_fb_signup .fb-button, #lwlb_contact_login .fb-button {
+    display: inline-block;
+    float: none;
+    left: auto
+}
+
+#lwlb_fb_signup .fb-tooltip {
+    margin-left: -125px;
+    text-align: left;
+    width: 250px
+}
+
+#lwlb_fb_signup .fb-questionmark {
+    cursor: help;
+    margin: 1em 0.5em;
+    vertical-align: top
+}
+
+.fb-connect-banner {
+    background: #dbdfec;
+    background: -webkit-gradient(linear, center top, center bottom, from(#e3e7f1), to(#dbdfec));
+    background: -moz-linear-gradient(top, #e3e7f1, #dbdfec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe3e7f1', endColorstr='#ffdbdfec', GradientType=0);
+    border: 1px solid #c3cade;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 20px
+}
+
+.fb-connect-banner .fb-connect-banner-inner {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px
+}
+
+.fb-connect-banner .fb-one-liner, .fb-connect-banner .fb-bullets, .fb-connect-banner .fb-button-container {
+    float: left
+}
+
+.fb-connect-banner .fb-one-liner {
+    color: #393c3d;
+    font-size: 20px;
+    padding: 20px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    width: 301px
+}
+
+.fb-connect-banner .fb-bullets {
+    border-right: 1px solid #c3cade;
+    padding: 15px 20px 15px 0;
+    width: 321px
+}
+
+.fb-connect-banner .fb-bullets ul {
+    color: #848484;
+    font-size: 15px;
+    list-style: disc inside;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75)
+}
+
+.fb-connect-banner .fb-bullets .spacer-li {
+    margin: 3px 0
+}
+
+.fb-connect-banner .fb-button-container {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 26px 0 14px;
+    width: 292px
+}
+
+.fb-connect-banner .fb-button {
+    margin-left: 30px;
+    position: static
+}
+
+.fb-connect-banner .fb-facepile {
+    height: 56px;
+    overflow: hidden
+}
+
+#wish_list_button_box {
+    display: none
+}
+
+#wish_list_button_box .saved_count {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 10px;
+    margin: 10px -15px -10px;
+    float: left;
+    width: 252px;
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1)
+}
+
+#wish_list_button_box {
+    display: block
+}
+
+.galleria-thumbnails .galleria-image:hover {
+    border-color: #999
+}
+
+.galleria-thumbnails .galleria-image:hover.active {
+    border-color: #ae0061
+}
+
+.galleria-image-nav-right:hover, .galleria-image-nav-left:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80)
+}
+
+#rooster-tour-btn {
+    clear: right
+}
+
+.tour-item .copy {
+    float: left;
+    width: 256px
+}
+
+.tour-item p {
+    overflow: hidden
+}
+
+.tour-item .icon {
+    background: transparent url(https://a1.muscache.com/airbnb/static/bookit-icons-6521d90b3e4b4cc90344adc692a7335b.png) no-repeat 0 0;
+    overflow: hidden;
+    margin: 2px 10px 0 0;
+    float: left
+}
+
+.tour-item .cal {
+    background-position: 0 0px;
+    height: 24px;
+    width: 24px
+}
+
+.tour-item .contact {
+    background-position: 0px -29px;
+    height: 20px;
+    width: 24px
+}
+
+.tour-item .tryagain {
+    background-position: 0px -54px;
+    height: 18px;
+    width: 24px
+}
+
+.tour-item .payment {
+    background-position: 0px -77px;
+    height: 16px;
+    width: 24px
+}
+
+.tour-item .request {
+    background-position: 0px -98px;
+    height: 24px;
+    width: 24px
+}
+
+#bookit-tip-prompt {
+    display: block;
+    margin: 10px 0 0 0
+}
+
+.survey {
+    display: none;
+    font-size: 14px;
+    margin-top: 20px;
+    background: #fafafa;
+    border: 1px solid #c3c3c3;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0px 0px 2px rgba(100, 100, 100, 0.1);
+    box-shadow: inset 0 0px 0px 2px rgba(100, 100, 100, 0.1);
+    padding: 15px;
+    margin-bottom: 20px
+}
+
+.survey .survey_question {
+    font-weight: bold
+}
+
+.survey .quiz_icon {
+    position: relative;
+    top: 3px
+}
+
+.survey textarea {
+    width: 380px;
+    height: 50px;
+    margin: 5px 0
+}
+
+.survey .thanks {
+    display: none
+}
+
+.survey .more_feedback {
+    display: none;
+    float: left;
+    width: 53%;
+    padding-left: 10px;
+    padding-top: 7px
+}
+
+.survey form input[type="submit"] {
+    float: right;
+    margin-top: 5px
+}
+
+.survey .text_prompt.sad, .survey .survey .text_prompt.great {
+    display: none
+}
+
+.survey .dismiss {
+    text-decoration: none;
+    color: #999999;
+    font-size: 20px;
+    float: right
+}
+
+#persona_survey .survey_question {
+    margin-left: 5px
+}
+
+#persona_survey li {
+    width: 32%;
+    float: left;
+    padding: 5px;
+    color: #999
+}
+
+#persona_survey textarea {
+    width: 280px;
+    height: 50px;
+    margin: 5px 0
+}
+
+#persona_survey label:hover {
+    background: none
+}
+
+#persona_survey form input[type="submit"] {
+    position: absolute;
+    bottom: 10px;
+    right: 18px
+}
+
+#persona_survey .persona_survey_content {
+    position: relative
+}
+
+#persona_survey .response_money {
+    min-height: 72px
+}
+
+#persona_survey .response_learning {
+    min-height: 40px
+}
+
+#persona_survey .persona_result {
+    display: block;
+    float: left;
+    width: 20px
+}
+
+#persona_survey ul label {
+    display: block;
+    float: left;
+    width: 270px;
+    margin: 3px 0 0 3px
+}
+
+#nps_survey ul {
+    width: 100%
+}
+
+#nps_survey .radio_footer {
+    height: 40px;
+    width: 360px;
+    margin-left: 5px
+}
+
+#nps_survey input[type="radio"]:checked {
+    background-image: url(https://a2.muscache.com/airbnb/static/radio-background_gray-a59a2d596d6a7d786940d4d89b9910dc.png)
+}
+
+#nps_survey .nps_radio {
+    padding: 5px 7px;
+    width: 19px;
+    float: left;
+    text-align: center
+}
+
+#nps_survey .nps_radio input {
+    font-size: .7em;
+    width: 100%
+}
+
+#nps_survey .nps_radio span {
+    font-size: .8em;
+    margin-left: 2px
+}
+
+#nps_survey #score_none {
+    margin-left: -9999px
+}
+
+#nps_survey .nps_survey_content {
+    width: 40%;
+    float: left;
+    margin: 0 18px 0 5px
+}
+
+#nps_survey .radio_desc {
+    width: 33%;
+    float: left;
+    font-size: .8em;
+    height: 16px;
+    padding-bottom: 5px;
+    margin-top: -5px
+}
+
+#nps_survey .thumbs_down {
+    text-align: right;
+    margin-left: 2px;
+    width: 100px
+}
+
+#nps_survey .thumbs_up {
+    color: #f62792;
+    text-align: left;
+    width: 105px
+}
+
+#nps_survey .neutral {
+    color: #999999;
+    text-align: center;
+    width: 145px
+}
+
+#nps_survey .thumbs_down span {
+    float: left;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url(https://a0.muscache.com/airbnb/static/command_center/thumbs_down_up-930ee507a0b55762fe22b87b5e12956b.png) no-repeat
+}
+
+#nps_survey .thumbs_up span {
+    float: right;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url(https://a0.muscache.com/airbnb/static/command_center/thumbs_down_up-930ee507a0b55762fe22b87b5e12956b.png) no-repeat 0 -19px
+}
+
+#slider {
+    width: 40%;
+    float: left;
+    margin: 0 18px 0 5px
+}
+
+#love_survey .slider_container {
+    padding-top: 1em
+}
+
+#love_survey .slider_container .handle {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAADgklEQVQ4jYWVSU9TURSAq2BjXBkX8gdMDIm%2FiJi4YuGKREJckPgTwJVho0BImRa6ZEMDsgCEkAiU0nmgZSp0pqUjx%2FNd320KQbzJyXt995zvnvHW5XKWiNyS%2Bfl5t8qAyneVgIo4EnC%2Bsee2%2Bv9cd6DvFxcXZWNjQ1KplJRKJbGLd76xhw66%2FwWr0guVz0tLS1IoFKTZbEqpWJTTkxMJ%2BP3i29uTZDIpuWxW6vW60UEXG2zvBevG64WFBdlT41arZQzzuZycKTQRi0nw8FD2d3fNAfFoVE6Oj6VSqRhdbLBVxqv7wF%2BCwaAJF%2BVarSZlDfsik5GUehkKBAyYA5KJhGTOz6Wo0aB3c3MjAd2HcRf6YX19vZNHFIFfX19LIZ833kVCIQMO6eHH6bTkNJpqtWrShT4LBiwLdVMEitJutztK1vOqhovXsUjEgKPhsPH26urqFpRVLpdtQd2AB6gwkEajIS1V5oBuOCkhHYBJAykA2olQ9dFDYMEE7InH4yZsvONJ4ZpdB2CA14Dx1kIB8k6eSUtNbWHBBBzIavsUtXXIJ09ajLA4iEPajkeATfj6G1hF04EudnQQz%2BzlpRkiwGX6EU%2FOz84eFIr4kNDveYXDBFzntLROE3k80hwmNZy49i6FCmobHezvi9%2FnM%2BFH9Bue85vWC2uX8I3i0u%2BXFxeA6665ubk4UICAwtpWwA4PDgzQQs5OTw2YcAExhezxZB%2F9qMKZTJiu2dnZRb9%2BTGtvMlUWaA0xSmgE5J5FgTgEOHs%2B1bEH4JxPbWG6ZmZmBn6urhrlbqCFEgV7FJJF8fCaIQGOI9aGPK8qC6ZrcHDwGU1NfuwQ2PBIS%2BroSOgauoBFh9ANdtSBm%2FtD7WHAgsnw9UxNTX3yLi%2BbE%2FEAKHcDKcBb0tDQtrPjXnNGnT3Cj%2BmlRNd4vV6BBRPwY5Wn09PTX39tbv7Nn3qKMkWlylfa002dSgtmQvlGz6LPNbq9vS0wYDlMs56Mjo72T05Oftva2jIwPMCIViS%2FnWlTMO9MGnDGfWdnR7AdGRl5Dav7gjNeDw8Pv0GBkOgSDMkn%2BWXy7CLPRHChDqysrBjo0NBQ%2F11v7SIvJP35xMTERy5uKhzVlGS0UMBJAddlTIu0trZmLnd0sXFse%2B77E3mk0mvhfX19L8fHx99p3n54PJ7f2vRFhHct0NzY2NhbdLqgvQ7DrD%2BdeKlaHi4PLAAAAABJRU5ErkJggg%3D%3D) no-repeat center center;
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -7px;
+    z-index: 10
+}
+
+#love_survey .slider_container .track {
+    background: #e3e3e3;
+    background: -webkit-gradient(linear, center top, center bottom, from(#cacaca), to(#e3e3e3));
+    background: -moz-linear-gradient(top, #cacaca, #e3e3e3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcacaca', endColorstr='#ffe3e3e3', GradientType=0);
+    border: 1px solid #C0BFBF;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 1px 3px #fff;
+    box-shadow: 0 1px 3px #fff;
+    height: 8px;
+    position: relative;
+    top: 0;
+    z-index: 5
+}
+
+#love_survey .slider_container .marker {
+    border-right: 1px solid #bdbdbd;
+    width: 25%;
+    height: 8px;
+    float: left
+}
+
+#love_survey .slider_container .track.active {
+    background: #55c4eb;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00578f), color-stop(6%, #005f9c), color-stop(12%, #0280b4), color-stop(24%, #0796d2), color-stop(35%, #10a7e6), color-stop(47%, #19b0ef), color-stop(76%, #34c1fc), color-stop(82%, #41c7fe), color-stop(88%, #53cdfc), color-stop(94%, #49c4f5), color-stop(100%, #55c4eb));
+    background: -webkit-linear-gradient(top, #00578f 0%, #005f9c 6%, #0280b4 12%, #0796d2 24%, #10a7e6 35%, #19b0ef 47%, #34c1fc 76%, #41c7fe 82%, #53cdfc 88%, #49c4f5 94%, #55c4eb 100%);
+    background: -moz-linear-gradient(top, #00578f 0%, #005f9c 6%, #0280b4 12%, #0796d2 24%, #10a7e6 35%, #19b0ef 47%, #34c1fc 76%, #41c7fe 82%, #53cdfc 88%, #49c4f5 94%, #55c4eb 100%);
+    border: 1px solid #0097F5;
+    border-left-color: #207caf;
+    border-right-color: #207caf;
+    border-bottom-color: #57c5ea;
+    margin-top: -1px
+}
+
+#love_survey .slider_container .how_much_love {
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+    display: block;
+    font-size: .9em;
+    color: #999999
+}
+
+#love_survey .slider_container .how_much_love.lots {
+    float: right;
+    margin-top: -20px;
+    background: url(https://a0.muscache.com/airbnb/static/home/lovehate_icons-097eb22f1613e1d8dd01e8b8901f95aa.png) no-repeat;
+    width: 18px;
+    height: 17px
+}
+
+#love_survey .slider_container .how_much_love.okay {
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px
+}
+
+#love_survey .slider_container .how_much_love.none {
+    float: left;
+    background: url(https://a0.muscache.com/airbnb/static/home/lovehate_icons-097eb22f1613e1d8dd01e8b8901f95aa.png) no-repeat 0 -17px;
+    width: 18px;
+    height: 17px
+}
+
+#admin-placeholder .spinner {
+    margin-top: 40px;
+    margin-left: 473px;
+    margin-bottom: 40px
+}
+
+.service-fee-alert {
+    display: none
+}
+
+#room .service-fee-alert .middle {
+    border: none;
+    padding: 0;
+    background: none
+}
+
+#room .service-fee-alert .middle .alert {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ebd89c
+}
+
+#room .service-fee-alert .middle h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 5px 0
+}
+
+#room .service-fee-alert .middle p {
+    font-size: 13px;
+    color: #393c3d;
+    font-weight: normal
+}
+
+.reviews-list-item {
+    display: block
+}
+
+.reviews-list-item .left>.profile_pic {
+    max-width: 77px
+}
+
+.reviews-list-item .right>.speech-bubble {
+    width: 525px
+}
+
+.reviews-list-item .name {
+    display: block;
+    text-align: center
+}
+
+.reviews-list-item .date {
+    display: block;
+    text-align: right
+}
+
+#lwlb_contact select, #lwlb_contact input[type="text"] {
+    width: auto
+}
+
+#lwlb_contact form {
+    margin-bottom: 0
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1.0
+    }
+    33% {
+        opacity: 0.2
+    }
+    66% {
+        opacity: 1.0
+    }
+    100% {
+        opacity: 1.0
+    }
+}
+
+@-moz-keyframes mozpulsate {
+    0% {
+        opacity: 1.0
+    }
+    33% {
+        opacity: 0.2
+    }
+    66% {
+        opacity: 1.0
+    }
+    100% {
+        opacity: 1.0
+    }
+}
+
+@-webkit-keyframes webkitpulsate {
+    0% {
+        opacity: 1.0
+    }
+    33% {
+        opacity: 0.2
+    }
+    66% {
+        opacity: 1.0
+    }
+    100% {
+        opacity: 1.0
+    }
+}
+
+#book_it_status {
+    opacity: 1
+}
+
+.pulsate {
+    animation: pulsate 1.0s linear 1;
+    -moz-animation: mozpulsate 1.0s linear 1;
+    -webkit-animation: webkitpulsate 1.0s linear 1
+}
+
+#colorbox #cboxContent {
+    padding: 0
+}
+
+.bad {
+    color: #e51e18
+}
+
+#fb-tooltip {
+    width: 250px
+}
+
+.response-block {
+    margin-top: 10px;
+    width: 525px
+}
+
+.response-block .speech-bubble {
+    margin-left: 60px
+}
+
+.response-block .profile_pic {
+    float: left
+}
+
+.date_admin {
+    display: none
+}
+
+#email-share-modal form {
+    margin: 0
+}
+
+.table-fit-panel {
+    border-left: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-right: none;
+    border-top: none;
+    color: #666;
+    margin-top: -10px
+}
+
+.table-fit-panel td:first-child {
+    padding-left: 15px
+}
+
+.table-fit-panel td:last-child {
+    padding-right: 15px
+}
+
+.table .table-cell-price {
+    text-align: right
+}
+
+.table .table-row-total {
+    font-weight: bold
+}
+
+.table .table-row-total td {
+    text-align: right
+}
+
+.panel-padding-fit {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.grid_reputation {
+    float: left
+}
+
+.grid_reputation li {
+    float: left
+}
+
+.grid_reputation .grid_picture {
+    margin-bottom: 8px;
+    margin-right: 8px
+}
+
+.grid_reputation .tooltip img {
+    width: 50px;
+    height: 50px
+}
+
+.grid_picture .tooltip {
+    display: block
+}
+
+.star-rating {
+    z-index: 1;
+    position: relative
+}
+
+.star-rating .background {
+    position: absolute;
+    z-index: -1
+}
+
+.star-rating .icon.icon-star, .star-rating .icon.icon-star-half {
+    font-size: 1.3em;
+    line-height: 0.5em;
+    width: 0.7em
+}
+
+a .icon.icon-gray, .icon.icon-gray, a .icon.light-grey, .icon.light-grey {
+    color: #dbdbdb
+}
+
+.slideshow-images, .slideshow-thumbnails {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.slideshow-images {
+    height: 426px;
+    width: 639px;
+    position: relative
+}
+
+.slideshow-images li {
+    position: absolute
+}
+
+.slideshow-images li img {
+    display: block;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out
+}
+
+.slideshow-images li.active img {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100)
+}
+
+.slideshow-caption.hidden {
+    display: none
+}
+
+.slideshow-btn {
+    position: absolute;
+    top: -1px;
+    bottom: -1px
+}
+
+.slideshow-btn .icon {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px
+}
+
+.thumbnails-container {
+    position: relative
+}
+
+.slideshow-thumbnails li.active .mini-media-box {
+    border: 1px solid #ED1D89;
+    border-color: rgba(237, 29, 137, 0.8);
+    -webkit-box-shadow: 0 0 6px rgba(237, 29, 137, 0.8), 0 0 0 #000;
+    box-shadow: 0 0 6px rgba(237, 29, 137, 0.8), 0 0 0 #000
+}
+
+.slideshow-next {
+    right: -1px;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.slideshow-prev {
+    left: -1px;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.thumbnails-viewport {
+    position: relative;
+    overflow: hidden;
+    height: 42px;
+    margin: 0 30px;
+    padding: 6px
+}
+
+.thumbnails-slide-panel {
+    position: absolute;
+    left: 0;
+    width: 4000px;
+    padding-left: 5px;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out
+}
+
+.thumbnails-slide-panel li {
+    display: inline-block
+}
+
+.slideshow-preload {
+    display: none
+}
+
+.phone-number-input-widget {
+    float: left;
+    width: 380px
+}
+
+.phone-number-input-widget select {
+    margin: 0 0 15px
+}
+
+.phone-number-input-widget input {
+    color: #393c3d !important
+}
+
+.phone-number-input-widget label {
+    float: left;
+    margin: 0 10px 0 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    min-width: 115px;
+    width: auto !important
+}
+
+.phone-number-input-widget .pniw-number-container .pniw-number-prefix {
+    float: left;
+    line-height: 24px;
+    border: 1px solid #bbb;
+    border-right-width: 0;
+    min-width: 30px;
+    padding: 0 4px;
+    text-align: center;
+    color: #393c3d;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    background: #eee;
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#eee));
+    background: -moz-linear-gradient(top, #fff, #eee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+    -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8)
+}
+
+.phone-number-input-widget .pniw-number-container input.pniw-number {
+    line-height: 16px;
+    float: left;
+    width: 100px !important;
+    border-color: #bbb;
+    margin: 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    height: auto !important
+}
+
+.phone-number-verify-widget {
+    width: 380px;
+    margin: 10px 0;
+    float: left;
+    clear: both;
+    line-height: 26px;
+    background: #ececec url(https://a2.muscache.com/airbnb/static/edit_room/recessed-background-91ed5f933106a0c4b775f16e55d32451.png) top left repeat;
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    padding: 10px;
+    text-align: left;
+    padding: 15px
+}
+
+.phone-number-verify-widget strong {
+    font-weight: bold
+}
+
+.phone-number-verify-widget .pnaw-verification-error {
+    display: none;
+    color: #f00;
+    line-height: 1.5 !important;
+    margin-bottom: 5px !important
+}
+
+.phone-number-verify-widget .pnaw-verify-container {
+    width: 100%;
+    float: left;
+    margin-top: 10px
+}
+
+.phone-number-verify-widget .pnaw-verify-container a.cancel {
+    margin-left: 2px
+}
+
+.phone-number-verify-widget .pnaw-verify-container .why-verify {
+    float: right
+}
+
+.phone-number-verify-widget .pnaw-step2 {
+    display: none
+}
+
+.phone-number-verify-widget .pnaw-step2 p {
+    margin-bottom: 5px !important;
+    line-height: 20px
+}
+
+.phone-number-verify-widget .pnaw-step2 label {
+    margin: 10px 10px 0 0 !important;
+    line-height: 16px;
+    float: left;
+    width: auto !important
+}
+
+.phone-number-verify-widget .pnaw-step2 input {
+    float: left;
+    margin: 7px 0 0 !important
+}
+
+.phone-number-verify-widget .pnaw-step2 #phone_number_verification {
+    width: 60px !important
+}
+
+.phone-number-verify-widget .pnaw-step2 .cancel-message {
+    clear: left;
+    padding-top: 10px
+}
+
+.phone-number-verify-widget .pnaw-step2 .pnaw-verify-container {
+    float: left;
+    margin-top: 7px
+}
+
+.phone-number-verify-widget.loading .pnaw-verify-container {
+    background: url(https://a0.muscache.com/airbnb/static/spinner-2b6f2c9459f400addfb341d92307d7bf.gif) no-repeat center left
+}
+
+.phone-number-verify-widget.loading .pnaw-verify-container * {
+    visibility: hidden
+}
+
+#colorbox .phone-number-verify-widget {
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    border-width: 0;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent
+}
+
+.phone-numbers-container {
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    line-height: 38px
+}
+
+.phone-numbers-container table.phone-numbers-table {
+    border: 1px solid #d1d1c9;
+    border-collapse: separate;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+.phone-numbers-container table.phone-numbers-table th, .phone-numbers-container table.phone-numbers-table td {
+    padding: 0 10px;
+    border-bottom: 1px dotted #d1d1c9
+}
+
+.phone-numbers-container table.phone-numbers-table th {
+    background-color: #f1f1f1;
+    border-right: 1px solid #d1d1c9;
+    color: #393c3d
+}
+
+.phone-numbers-container table.phone-numbers-table td {
+    padding-right: 0;
+    min-width: 214px;
+    line-height: 16px;
+    background-color: #fff
+}
+
+.phone-numbers-container table.phone-numbers-table td:last-child {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 10px
+}
+
+.phone-numbers-container table.phone-numbers-table tr:first-child th {
+    -moz-border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0
+}
+
+.phone-numbers-container table.phone-numbers-table tr:first-child td:last-child {
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0
+}
+
+.phone-numbers-container table.phone-numbers-table tr:last-child td, .phone-numbers-container table.phone-numbers-table tr:last-child th {
+    border-bottom-width: 0
+}
+
+.phone-numbers-container table.phone-numbers-table tr:last-child th {
+    -moz-border-radius: 0 0 0 5px;
+    -webkit-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px
+}
+
+.phone-numbers-container table.phone-numbers-table tr:last-child td:last-child {
+    -moz-border-radius: 0 0 5px 0;
+    -webkit-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0
+}
+
+.phone-numbers-container table.phone-numbers-table tr:first-child:last-child td, .phone-numbers-container table.phone-numbers-table tr:first-child:last-child th {
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px
+}
+
+.phone-numbers-container table.phone-numbers-table span.verified, .phone-numbers-container table.phone-numbers-table span.unverified {
+    margin-right: 10px
+}
+
+.phone-numbers-container table.phone-numbers-table span.verified {
+    color: #5BB013
+}
+
+.phone-numbers-container table.phone-numbers-table span.verified span.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    float: left;
+    background: transparent url(https://a1.muscache.com/airbnb/static/profile/icons-verification-07884ec2932f8a83aa613ea826325f9c.png) no-repeat -50px 0
+}
+
+.phone-numbers-container table.phone-numbers-table a.remove {
+    overflow: hidden;
+    text-indent: -9999em;
+    width: 14px;
+    height: 15px;
+    background: url(https://a1.muscache.com/airbnb/static/roosters/rooster-close-423b73bc2a64422623ed9f89accf93e8.png) no-repeat;
+    display: block
+}
+
+.phone-numbers-container table.phone-numbers-table a.remove:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80)
+}
+
+.phone-numbers-container table.phone-numbers-table tr.verified span.unverified, .phone-numbers-container table.phone-numbers-table tr.verified a.verify {
+    display: none
+}
+
+.phone-numbers-container table.phone-numbers-table tr.unverified span.verified {
+    display: none
+}
+
+.phone-numbers-container a.add {
+    float: left;
+    clear: both;
+    margin: 10px 0 5px
+}
+
+.phone-numbers-container a.add span.icon {
+    background: url(https://a2.muscache.com/airbnb/static/multiselect/add-more-e2b5c80da541134ad4267b081710b9b9.png) no-repeat;
+    display: block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin-right: 6px
+}
+
+.phone-numbers-container .no-phone-numbers p {
+    margin: 0 !important
+}
+
+.phone-numbers-container.has-phone-numbers ul.phone-numbers-list {
+    display: block
+}
+
+.phone-numbers-container.has-phone-numbers .no-phone-numbers {
+    display: none
+}
+
+.phone-numbers-container .phone-number-verify-widget {
+    display: none
+}
+
+.phone-numbers-container.loading {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50)
+}
+
+.phone-numbers-container.loading div.spinner {
+    display: block
+}
+
+.phone-numbers-container div.spinner {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 16px;
+    top: 10px;
+    background: url(https://a0.muscache.com/airbnb/static/spinner-2b6f2c9459f400addfb341d92307d7bf.gif) no-repeat center center
+}
+
+.phone-numbers-container.noCancel a.cancel {
+    display: none
+}
+
+.uploadarea-container {
+    border: 1px solid #c3c3c3;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0
+}
+
+.uploadarea-container .status {
+    height: 0;
+    z-index: 3;
+    position: relative;
+    padding: 0 15px;
+    overflow: hidden;
+    text-align: left;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background: #f2f2f2;
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#f2f2f2));
+    background: -moz-linear-gradient(top, #fff, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.9);
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0
+}
+
+.uploadarea-container .status h3 {
+    line-height: 45px;
+    font-size: 1.5em;
+    color: #393c3d
+}
+
+.uploadarea-container .status h3.processing, .uploadarea-container .status h3.done, .uploadarea-container .status h3.setup {
+    display: none
+}
+
+.uploadarea-container .status img {
+    margin-left: 15px
+}
+
+.uploadarea-container .status.uploading, .uploadarea-container .status.setup, .uploadarea-container .status.processing, .uploadarea-container .status.done {
+    height: 45px
+}
+
+.uploadarea-container .status.setup div.progress-bar, .uploadarea-container .status.setup h3 {
+    display: none
+}
+
+.uploadarea-container .status.setup h3.setup {
+    display: block
+}
+
+.uploadarea-container .status.processing div.progress-bar, .uploadarea-container .status.processing h3 {
+    display: none
+}
+
+.uploadarea-container .status.processing h3.processing {
+    display: block
+}
+
+.uploadarea-container .status.done div.progress-bar, .uploadarea-container .status.done h3 {
+    display: none
+}
+
+.uploadarea-container .status.done h3.done {
+    display: block
+}
+
+.uploadarea-container .uploadarea {
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    text-align: center;
+    padding: 10px
+}
+
+.uploadarea-container #snapper-uploadarea.uploadarea {
+    display: none
+}
+
+.uploadarea-container #single-uploadarea.uploadarea {
+    display: none
+}
+
+.uploadarea-container #single-uploadarea.uploadarea input[type="file"] {
+    margin-bottom: 20px
+}
+
+.uploadarea-container #single-uploadarea.uploadarea h3 {
+    color: #959595;
+    font-size: 1.5em;
+    text-shadow: 0 1px #fff;
+    margin: 20px 0 10px 0
+}
+
+.uploadarea-container #multi-uploadarea.uploadarea {
+    height: 190px;
+    -webkit-transition-property: box-shadow;
+    -moz-transition-property: box-shadow;
+    -o-transition-property: box-shadow;
+    transition-property: box-shadow;
+    -webkit-transition-property: -webkit-box-shadow;
+    -moz-transition-property: -webkit-box-shadow;
+    -o-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s
+}
+
+.uploadarea-container #multi-uploadarea.uploadarea h3 {
+    color: #959595;
+    font-size: 1.5em;
+    text-shadow: 0 1px #fff;
+    margin: -15px;
+    padding: 40px;
+    height: 140px;
+    background: url(https://a0.muscache.com/airbnb/static/edit_room/uploadarea-background-ec5268f761f442f87184c65fd6b8451a.png) center 80px no-repeat
+}
+
+.uploadarea-container #multi-uploadarea.uploadarea.over {
+    -webkit-box-shadow: inset 0 0 5px 3px #1d95cb;
+    box-shadow: inset 0 0 5px 3px #1d95cb
+}
+
+.uploadarea-container #multi-uploadarea.uploadarea.over h3 {
+    -webkit-animation: pulsate 1.5s linear infinite;
+    -moz-animation: mozpulsate 1.5s linear infinite
+}
+
+#photo_uploader_v3 #multi-uploadarea.uploadarea h3 {
+    background: none
+}
+
+.single .uploadarea {
+    text-align: left
+}
+
+.single .uploadarea input[type="file"] {
+    font-size: 1.2em;
+    width: 650px
+}
+
+div.progress-bar {
+    float: right;
+    margin: 17px 0;
+    width: 500px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 10px;
+    border: 1px solid #c5c5c5;
+    background: #dedede;
+    -webkit-box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2)
+}
+
+div.progress-bar div.progress {
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    border: 1px solid #b0075e;
+    height: 10px;
+    margin: -1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: #e10979;
+    background: -webkit-gradient(linear, center top, center bottom, from(#f62792), to(#e10979));
+    background: -moz-linear-gradient(top, #f62792, #e10979);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff62792', endColorstr='#ffe10979', GradientType=0);
+    -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+    width: 0
+}
+
+.uploadarea-container.profile {
+    width: 340px;
+    margin: 0 auto
+}
+
+.uploadarea-container.profile .status.uploading .progress-bar {
+    display: none
+}
+
+.uploadarea-container.profile #single-uploadarea.uploadarea {
+    height: 296px
+}
+
+.uploadarea-container.profile #single-uploadarea.uploadarea h3 {
+    margin-top: 100px
+}
+
+.uploadarea-container.profile #single-uploadarea.uploadarea #ajax_upload_form.loading {
+    height: 40px
+}
+
+.uploadarea-container.profile #single-uploadarea.uploadarea #ajax_upload_form.loading input {
+    display: none
+}
+
+.uploadarea-container.profile #snapper-uploadarea.uploadarea {
+    padding: 0;
+    height: 316px
+}
+
+.uploadarea-container.profile #multi-uploadarea.uploadarea {
+    height: 296px
+}
+
+.uploadarea-container.profile #multi-uploadarea.uploadarea h3 {
+    height: 246px;
+    background-position: center 150px;
+    padding-top: 60px
+}
+
+.uploadarea-container.profile #multi-uploadarea.uploadarea.uploaded {
+    background-size: cover
+}
+
+.uploadarea-container.profile #multi-uploadarea.uploadarea.uploaded h3 {
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+    color: white;
+    opacity: 0.0;
+    -webkit-transition: opacity 0.3s linear
+}
+
+.uploadarea-container.profile #multi-uploadarea.uploadarea.uploaded h3:hover {
+    opacity: 1.0
+}
+
+#photo-widget-options {
+    margin-top: 10px;
+    text-align: center
+}
+
+#photo-widget-options li {
+    display: inline-block;
+    width: 170px;
+    height: 55px;
+    cursor: pointer
+}
+
+#photo-widget-options li span.button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 1px #fff, 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 1px #fff, 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+#photo-widget-options li span.description {
+    display: inline-block;
+    width: 100px;
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: 1px;
+    color: #979797;
+    text-align: left;
+    text-shadow: 0 1px 0 white
+}
+
+#photo-widget-options li.fromwebcam.disable span.description {
+    margin-top: 0
+}
+
+#photo-widget-options li.fromwebcam span.button {
+    background-image: url(https://a0.muscache.com/airbnb/static/webcam-a6a2ab354f10d4431b500a9190e273a8.png), -webkit-linear-gradient(top, #eee, #e1e1e1)
+}
+
+#photo-widget-options li.fromwebcam:hover span.button {
+    background-image: url(https://a1.muscache.com/airbnb/static/webcam-glow-f85c4cb03b35ba6a5de6ed03dc81e304.gif), -webkit-linear-gradient(top, #eee, #e1e1e1)
+}
+
+#photo-widget-options li.file span.button {
+    background-image: url(https://a2.muscache.com/airbnb/static/upload-e83bd93badb76c54de604af0e545a3be.png), -webkit-linear-gradient(top, #eee, #e1e1e1)
+}
+
+#photo-widget-options li.file:hover span.button {
+    background-image: url(https://a2.muscache.com/airbnb/static/upload-arrow-c58877d7feb6f7d579c75310840a3d7c.gif), -webkit-linear-gradient(top, #eee, #e1e1e1)
+}
+
+#photo-widget-options li.file span.description {
+    display: none
+}
+
+#photo-widget-options li.file span.description.file {
+    display: inline-block
+}
+
+#photo-widget-options li.draganddrop span.button {
+    background-image: url(https://a0.muscache.com/airbnb/static/dd-3e222d873348c40b239fa626b6c763af.png), -webkit-linear-gradient(top, #eee, #e1e1e1)
+}
+
+#photo-widget-options li.draganddrop span.description {
+    display: none
+}
+
+#photo-widget-options li.draganddrop span.description.draganddrop {
+    display: inline-block
+}
+
+#verification_options #p4-verifications {
+    margin-top: 10px;
+    border: 1px solid #d1d1c9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+#verification_options #p4-verifications .verification-flow-intro a {
+    border: 0
+}
+
+#verification_options #p4-verifications .verification-flow-container {
+    margin-top: 0
+}
+
+#verification_options #p4-verifications .verification-flow-container .verification-flow-panels {
+    border: 0
+}
+
+.verification-flow-container {
+    position: relative;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5)
+}
+
+.verification-flow-container .verification-flow-step {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 16px;
+    color: #848484
+}
+
+.verification-flow-container p.verifications-comma-separated {
+    font-size: 16px;
+    color: #959595
+}
+
+.verification-flow-container p.verifications-comma-separated:first-letter {
+    text-transform: capitalize
+}
+
+.verification-flow-container .verification-flow-intro {
+    display: none
+}
+
+.verification-flow-container .verification-flow-intro a {
+    position: relative;
+    border: 1px solid #d2d2d2;
+    display: block;
+    padding: 15px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#f6f6f6));
+    background: -moz-linear-gradient(top, #fff, #f6f6f6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff6f6f6', GradientType=0);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.verification-flow-container .verification-flow-intro a:hover {
+    text-decoration: none;
+    background: #fdfdfd;
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#fdfdfd));
+    background: -moz-linear-gradient(top, #fff, #fdfdfd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fffdfdfd', GradientType=0)
+}
+
+.verification-flow-container .verification-flow-intro a:active {
+    background: #fafafa;
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#fafafa));
+    background: -moz-linear-gradient(top, #fff, #fafafa);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fffafafa', GradientType=0);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 6px rgba(0, 0, 0, 0.7)
+}
+
+.verification-flow-container .verification-flow-intro a span.arrow {
+    float: right;
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAbCAMAAACp3USTAAAAMFBMVEXW1tb7%2B%2Fv%2B%2F%2F%2F7%2FPz9%2Ff2%2Fv7%2FGxsbT09PQ0NDIyMjX19fJycnPz8%2F6%2Bvr%2F%2F%2F%2FZ2dmSWNKCAAAAAnRSTlP%2FAOW3MEoAAABsSURBVChTZdAxEsMgEENR%2FSKQGM%2Fo%2FrdNYWAXr8o3qr4A%2Bpc8Ab397pf1Zo%2F8FL3Zdn5KzbbtESjwG0VFUVFUfOzEaQcuy7gtYVhg2DXN8fto0bZEyzJNO%2Bixk1AlVAlVQhSK9kG7faLVPhN%2FnAQMASCAeHAAAAAASUVORK5CYII%3D) no-repeat;
+    right: 15px;
+    top: 23px;
+    width: 19px;
+    height: 27px
+}
+
+.verification-flow-container .verification-flow-complete {
+    display: none;
+    position: relative
+}
+
+.verification-flow-container .verification-flow-complete .checkmark {
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    right: 15px;
+    position: absolute;
+    display: block;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEyklEQVRIiZWUbUyVZRjHn%2Fs553mBjTG0rfX2xdbWsvXBWbYZWcm7cHg7HODwdlyQEhgoVGTvUZpztjKJBA15f8cDIgIKBiJJmiKUSm0uP7T8UBtbatmAf9f1nOPBIwh2b%2F9z7t33df3%2B13099%2FNI7%2F3sK91NMU7TElI2qZ10hjTl1hn3Gu8tkRYa84IPmvxJ2%2BM7THh5QEX%2BDzoKzvtg64SvIZ7zGu9xDMdyzrwG7074eim6zeSIdZqQNajizQu%2BeP2ijtwxHRvOacg8q8FxRsN6UhbNs89ryBv3QSbFcg7nzjW45OuZR7eaiuLbzdhy1gdv%2FKTj1XM6HCMa0k9pSPvOW7yWQeL9TDLM%2BV4H5zLDy2DrBd34t7TIjniqomBUw%2BYxqvKUitSTKlIWEcekDatwUHzWiIo4YjDLY%2FDWj7pkaZb9o1tk5J3WkE%2BtSB9SYR%2F8f0o9oSKDzNbTP7OYaRgUjetSVJP88fo%2BBVuo%2BgyCJ397b0rqU5HQrcLWS%2FN%2BOhE9dM6395gRWS9vMwwiG6j6Jhmb6Va8Qj21H6fk%2FsWVSNDYRh01p4uxpSOQbpNrPZWMHYMaLMRcu0cOkMjJntJlpmunIeW4q6rFZOuhNtTpODpeBx43bv6F1zpWwUansZNJOp3E1mlGeKW8SVpXK7dnU9820s1IZsCxhcWQ6FodvW74rbGz34GELtVgpFKhKb0Kwg%2FIXVJEjXxpE8EdA65jsxgS56QWtKqwdtJaj2udAZZqgo%2B54DMzM4ZK%2BgoR3aAYeRxnp0LSyCi8Sv5diqiSJ%2FPpDvMCg2xHqMJGBZ8dy8bolQEkVT9I95vgZGSpmh9uqSd4l7sQkv0oPex%2BDRGV8r8SHWMyd1hHEoGth1xVb%2B9O8xz98tULsJU9grASHT2j3vA9vYWIrFQQ73Tl3lLiYWpRj4awCvm6RD%2BXssjNSlXGENzSoCKv6QX8ffO6AZmensaVq79g5GKfB8xru48UIGyfgugmV97tYkMb3aqQcvmyFLpftDu6FSR2KFQ9JTQrWEdV5dcGGyYMY82BlytGK2NavMUMq5NO1WbG2i9FnxS6T6RZm01I7po1sDTRDahQkFcTjBv%2FXMPU1JRHX3QVILSMYhpcsXfKMGin%2FToTVn8o3pdCyoR%2F2D6B9F7epI9Vs5kMzIhqNCPsG3o%2F6oLw2x%2B%2FYvLan9h1OBche2mv3hVzpziXGVb66FHhuH%2BF9JS08YQiBZWKHQktJmMjpmU2gU0iqswGNLiUXpyKu8NZnBvvpJg6GauLxX76UDxgGDz3iQgI%2FlrA3mlCXJu3yb2Kczg3rtUEZt33pLSSDPyljUOK8U168XOxIaxcIPEQBR2kBG4XGzUvLI7hWM6xOvm0Ak8Xig8I%2BRBJk3LcBjTkNbvER6FlAtY2V7u4Iu4pV8f9vV28xnscw7HxVDnDV70tSoi1jOTHTCnnpMeAh5nalRP0lUAM9TGBEq0drr5yhbFu8ZzXeI9jLDUygkoEVuQZlT9GCmCWQcz1NuChPGoRy%2BghlbJRVLWMOL4AB01IpC8ki%2Be8FllFYIp59h1xYOly6Xl35QyfheYOK3Pkdvd7OFBa%2FkyRKA78VAyu2SkmXtotwOJ54DYxtLJA7Fj6hAF%2B3N1zP0%2Fl7vEfDq81c6QY0ooAAAAASUVORK5CYII%3D) no-repeat
+}
+
+.verification-flow-container .verification-flow-panel {
+    display: none
+}
+
+.verification-flow-container .verification-flow-panel .verification-flow-header h3 {
+    float: left
+}
+
+.verification-flow-container .verification-flow-panel .verification-flow-header .addendum {
+    float: left;
+    margin-left: 10px;
+    line-height: 24px;
+    color: #888
+}
+
+.verification-flow-container .verification-flow-panel.profile_photo .photo-widget {
+    margin-bottom: 5px
+}
+
+.verification-flow-container .verification-flow-panel.phone_verification .phone-numbers-container {
+    margin: 0
+}
+
+.verification-flow-container .verification-flow-panel.basic_profile p.suggestion {
+    margin-bottom: 10px;
+    color: #888;
+    clear: both
+}
+
+.verification-flow-container .verification-flow-panel.basic_profile textarea {
+    width: 98%;
+    min-height: 50px
+}
+
+.verification-flow-container .verification-flow-panel.real_name.loading {
+    min-height: 200px;
+    background: url(https://a0.muscache.com/airbnb/static/spinner-2b6f2c9459f400addfb341d92307d7bf.gif) no-repeat center center
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria {
+    margin-bottom: 20px
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria p.suggestion {
+    color: #bbb
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria label {
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria label input, .verification-flow-container .verification-flow-panel.full_profile .criteria label select {
+    float: right
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria label input {
+    margin-top: -3px
+}
+
+.verification-flow-container .verification-flow-panel.full_profile .criteria label select {
+    margin-left: 3px;
+    font-size: 1.1em
+}
+
+.verification-flow-container .button-bar {
+    margin-top: 5px
+}
+
+.verification-flow-container .button-bar span.loading {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    zoom: 1;
+    background: url(https://a0.muscache.com/airbnb/static/spinner-2b6f2c9459f400addfb341d92307d7bf.gif) no-repeat;
+    display: none
+}
+
+.verification-flow-container.loading span.loading {
+    display: inline-block
+}
+
+.verification-flow-container.required .verification-flow-intro {
+    border: 1px solid #e00
+}
+
+.btnGroup .btn {
+    margin-right: 25px;
+    min-width: 200px
+}
+
+.not-there, .did-resend {
+    display: none
+}
+
+#lwlb_contact .verification-flow-panels>.content-row {
+    border-top: none
+}
+
+body {
+    position: relative
+}
+
+#joyRideTipContent {
+    display: none
+}
+
+.joyride-tip-guide {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    background: -webkit-gradient(linear, center top, center bottom, from(rgba(50, 50, 50, 0.9)), to(rgba(0, 0, 0, 0.9)));
+    background: -moz-linear-gradient(top, rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5323232', endColorstr='#e5000000', GradientType=0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5), 0 1px 0 rgba(100, 100, 100, 0.1), 0 2px 0 rgba(150, 150, 150, 0.1);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5), 0 1px 0 rgba(100, 100, 100, 0.1), 0 2px 0 rgba(150, 150, 150, 0.1);
+    padding: 10px 10px 10px 15px;
+    color: #fff;
+    width: 300px;
+    z-index: 10;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: left !important
+}
+
+.joyride-tip-guide span.joyride-nub {
+    display: block;
+    position: absolute;
+    left: 10px;
+    width: 11px;
+    height: 8px;
+    background: url(https://a0.muscache.com/airbnb/static/header/dropdown_arrow-75b852d13e8fb7fc139c2b93a1911e88.png) no-repeat;
+    top: -7px
+}
+
+.joyride-tip-guide span.joyride-nub.top-nub {
+    top: -7px;
+    bottom: none
+}
+
+.joyride-tip-guide span.joyride-nub.bottom-nub {
+    bottom: 0px;
+    bottom: none
+}
+
+.joyride-tip-guide h1, .joyride-tip-guide h2, .joyride-tip-guide h3, .joyride-tip-guide h4, .joyride-tip-guide h5, .joyride-tip-guide h6 {
+    line-height: 1.25;
+    margin: 0;
+    font-weight: normal !important;
+    color: #fff !important
+}
+
+.joyride-tip-guide h1 {
+    font-size: 30px
+}
+
+.joyride-tip-guide h2 {
+    font-size: 26px
+}
+
+.joyride-tip-guide h3 {
+    font-size: 22px
+}
+
+.joyride-tip-guide h4 {
+    font-size: 18px
+}
+
+.joyride-tip-guide h5 {
+    font-size: 16px
+}
+
+.joyride-tip-guide h6 {
+    font-size: 14px
+}
+
+.joyride-tip-guide p, .joyride-tip-guide li {
+    margin: 0 0 12px 0;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-weight: normal !important
+}
+
+.joyride-tip-next {
+    margin: 5px 0
+}
+
+.joyride-tip-guide .joyride-next-tip:after {
+    clear: both
+}
+
+.joyride-tip-guide .joyride-next-tip {
+    width: auto;
+    float: left;
+    margin: 0 6px 8px 0px;
+    border: 1px solid #459a00;
+    background: #4aa400;
+    background: -webkit-gradient(linear, center top, center bottom, from(#5ccd00), to(#4aa400));
+    background: -moz-linear-gradient(top, #5ccd00, #4aa400);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5ccd00', endColorstr='#ff4aa400', GradientType=0)
+}
+
+.joyride-timer-indicator-wrap {
+    width: 50px;
+    height: 3px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 17px;
+    bottom: 16px
+}
+
+.joyride-timer-indicator {
+    display: block;
+    width: 0;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.25)
+}
+
+.joyride-close-tip {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ccc !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: none !important
+}
+
+.joyride-close-tip:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration: none
+}
+
+.navbar .nav>li a.joyride-close-tip {
+    position: absolute
+}
+
+#header .nav>li>.joyride-tip-guide a.btn {
+    text-transform: none
+}
+
+.spinner.pink-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: none;
+    left: 0;
+    top: 0;
+    background: url(https://a1.muscache.com/airbnb/static/pink-spinner-e75207b16179f5bc309dcc9f3048ff69.gif) 50% 50% rgba(255, 255, 255, 0.75) no-repeat;
+    z-index: 100;
+    display: block
+}
+
+.spinner.pink-spinner.hidden {
+    display: none
+}
+
+.preview-bar h4 {
+    color: white;
+    line-height: 32px
+}
+
+.preview-bar h4.steps {
+    font-weight: 300
+}
+
+.preview-bar .center {
+    text-align: center
+}
+
+.preview-bar strong {
+    text-transform: uppercase
+}
