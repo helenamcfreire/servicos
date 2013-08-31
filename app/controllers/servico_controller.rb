@@ -1,5 +1,4 @@
 require 'will_paginate/array'
-require 'open-uri'
 
 class ServicoController < HomeController
 
