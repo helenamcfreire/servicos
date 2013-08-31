@@ -20,11 +20,13 @@ class ServicoController < HomeController
 
   def list
 
-    like = param_to_like(params[:term])
+    like = param_to_like(params[:query])
     servicos = Servico.where('lower(nome) LIKE ?', like)
-                      .map {|servico| Hash[ id: servico.id, label: servico.nome, name: servico.nome ]}
+                      .collect(&:nome)
 
-    render json: servicos
+    json = {:query => params[:query], :suggestions => servicos}
+
+    render :json => json
 
   end
 

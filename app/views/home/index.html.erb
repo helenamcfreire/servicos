@@ -50,8 +50,15 @@
 
     /*       AUTOCOMPLETE DO CAMPO 'QUAL SERVICO VOCE DESEJA?'     */
     $(function() {
-        $("#servicos").autocomplete({
-            source: "/servico/list"
+
+        var $servicos = $('#servicos');
+
+        $servicos.autocomplete({
+            serviceUrl:'/servico/list',
+            maxHeight:400,
+            width: $servicos.width(),
+            dataType: 'json',
+            zIndex: 9999
         });
     });
 
