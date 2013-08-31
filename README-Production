@@ -1,0 +1,8 @@
+Production Stuff
+
+1 - Não esquecer de configurar as variáveis do AWS (Amazon WebServices)
+    heroku config:set AWS_BUCKET=servicos
+    heroku config:set AWS_ACCESS_KEY_ID=(Get in Google Drive)
+    heroku config:set AWS_SECRET_ACCESS_KEY=(Get in Google Drive)
+
+2 - Rodar o script de dados
