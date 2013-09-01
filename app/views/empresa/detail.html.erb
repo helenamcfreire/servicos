@@ -65,46 +65,48 @@
         </div>
       </div>
 
-      <div id="details" class="space2">
-        <div class="middle panel-border clearfix">
-          <ul class="nav nav-tabs panel-background-gray">
-            <li class="active">
-              <a id="description_link" href="#">
-                Envie uma Avaliação
-              </a>
-            </li>
-          </ul>
+      <% if cookies[:user_id] %>
+          <div id="details" class="space2">
+            <div class="middle panel-border clearfix">
+              <ul class="nav nav-tabs panel-background-gray">
+                <li class="active">
+                  <a id="description_link" href="#">
+                    Envie uma Avaliação
+                  </a>
+                </li>
+              </ul>
 
-          <div class="tab-content panel-padding clearfix">
-            <div class="left">
-              <div class="profile_pic">
-                <div class="matte-media-box">
-                  <img class="lazy" height="68" src="<%= current_user.photo_url %>" width="68" style="display: inline;">
+              <div class="tab-content panel-padding clearfix">
+                <div class="left">
+                  <div class="profile_pic">
+                    <div class="matte-media-box">
+                      <img class="lazy" height="68" src="<%= current_user.photo_url %>" width="68" style="display: inline;">
+                    </div>
+                    <br/>
+                            <span class="name">
+                                  <a href="#" rel="nofollow"><%= current_user.name %></a>
+                            </span>
+                  </div>
                 </div>
-                <br/>
-                        <span class="name">
-                              <a href="#" rel="nofollow"><%= current_user.name %></a>
-                        </span>
+                <div class="right">
+                  <div style="width: 525px">
+                    <div class="rateit bigstars"
+                         data-rateit-starwidth="32"
+                         data-rateit-starheight="32"
+                         data-rateit-step="1"
+                         data-rateit-resetable="false"
+                         style="margin-bottom: 15px"></div><br/>
+
+                    <input type="text" id="titulo" placeholder="Escreva um título" style="width: 330px"/><br/>
+                    <textarea id="comentario" placeholder="Escreva um comentário" style="width: 430px; height: 100px"></textarea><br/>
+                    <input type="button" class="btn" id="enviarComentario" value="Enviar Avaliação"></button>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="right">
-              <div style="width: 525px">
-                <div class="rateit bigstars"
-                     data-rateit-starwidth="32"
-                     data-rateit-starheight="32"
-                     data-rateit-step="1"
-                     data-rateit-resetable="false"
-                     style="margin-bottom: 15px"></div><br/>
-
-                <input type="text" id="titulo" placeholder="Escreva um título" style="width: 330px"/><br/>
-                <textarea id="comentario" placeholder="Escreva um comentário" style="width: 430px; height: 100px"></textarea><br/>
-                <input type="button" class="btn" id="enviarComentario" value="Enviar Avaliação"></button>
-              </div>
-            </div>
-
           </div>
-        </div>
-      </div>
+      <% end %>
 
 
       <div id="reputation" class="space2">

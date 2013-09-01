@@ -5,7 +5,9 @@
       <ul class="nav pull-right">
         <li>
           <% if cookies[:user_id] %>
-              <%= current_user.name %>
+              <a href="#">
+                Olá, <%= current_user.name %>
+              </a>
           <% else %>
               <%= link_to 'Entrar com Facebook', '/auth/facebook' %>
           <% end %>
