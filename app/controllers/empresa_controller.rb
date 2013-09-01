@@ -17,5 +17,18 @@ class EmpresaController < HomeController
       @empresa_servico = EmpresaServico.find(params[:id])
   end
 
+  def rate
+
+    @avaliacao = Avaliacao.new({ :titulo => params[:titulo],
+                                 :comentario => params[:comentario],
+                                 :rate => params[:rate],
+                                 :user_id => cookies[:user_id],
+                                 :empresa_servico_id => params[:empresa_servico_id] })
+    @avaliacao.save
+
+    render :nothing => true
+
+  end
+
 
 end

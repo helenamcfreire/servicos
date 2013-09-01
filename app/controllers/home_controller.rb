@@ -9,5 +9,4 @@ class HomeController < ApplicationController
     '%' + param.downcase + '%'
   end
 
-
 end

@@ -2249,7 +2249,6 @@ img.replaced {
 
 .reviews-list-item .date {
     display: block;
-    text-align: right
 }
 
 #lwlb_contact select, #lwlb_contact input[type="text"] {
@@ -3562,4 +3561,24 @@ body {
 
 .preview-bar strong {
     text-transform: uppercase
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.alert {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:100000;
+    padding: 28px;
+    font-size: 1.7em;
+    text-align: center;
+    overflow-x: hidden;
 }

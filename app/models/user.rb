@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :avaliacaos
+
   attr_accessible :name, :email, :access_token, :uid, :photo_url, :provider
 
 

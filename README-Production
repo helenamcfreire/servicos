@@ -7,4 +7,6 @@ Production Stuff
 
 2 - Garantir que a opção {:client_options => {:ssl => {:verify => false}}} do omniauth.rb não está setada
 
-3 - Rodar o script de dados
+3 - Mudar no console de apps do facebook o domínio que ele irá retornar ao logar na aplicação
+
+4 - Rodar o script de dados

@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130831195720) do
+ActiveRecord::Schema.define(:version => 20130901154403) do
+
+  create_table "avaliacaos", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "empresa_servico_id"
+    t.string   "titulo"
+    t.text     "comentario"
+    t.integer  "rate"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "cidades", :force => true do |t|
     t.string  "nome"

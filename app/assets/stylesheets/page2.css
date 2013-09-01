@@ -686,13 +686,8 @@ address {
 }
 
 .user-default {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAAAAADEa8dEAAABHklEQVQ4y63Sa0%2BDMBSA4f3%2Fn7aABNIiDko5bYkgbDgoGPWL3G9ZgSy%2BHw9PoD3hRA90ol%2B7HUXVbs%2Bh1Et2UakZmu4n24i%2FUuJYmnXfQNgKwpCDh5AaZZbPwzoBOFEi8ETYJghfonLKD8K%2BIJiNl4jCgECNGBsRUyFJJuRLBUodPiDu3BWocMWAxGX5OTlWsgnxaSwXSP5Ew57ibyWSt%2F7kkEk1qvpFQbWBZNzejydyC5XNoYQo16iYypgf1EoEBLLZeI4idDZs2iBqG2cUPUCRqWOXQncmoC7WzfcVuiLdJjDusvnviP2C0jn60DBhM9IyRrAWTyi3HFiR7m1vZt6hPM8zDOJhYF%2Frxx36vAhF7m1Exa%2ByYkQ7%2FSs60B9PELD3u%2BrkiQAAAABJRU5ErkJggg%3D%3D);
     height: 36px;
     width: 36px
-}
-
-.listing-default {
-    background-image: url(data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEASABIAAD%2F2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwJCQcKDg0PDw4NDg4QEhcTEBEWEQ4OFBsUFhgYGhoaDxMcHhwZHhcZGhn%2F2wBDAQQEBAYFBgwGBgwZEA4QGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRn%2FwAARCABKAHIDASIAAhEBAxEB%2F8QAHAAAAgMBAQEBAAAAAAAAAAAABQYAAwQBAgcI%2F8QAOhAAAgEDAwEFBQYFAwUAAAAAAQIDAAQRBRIhMQYTQVFhFCJxgZEVIzKhwdEkQlKTsRYzNCVTYpLh%2F8QAFAEBAAAAAAAAAAAAAAAAAAAAAP%2FEABQRAQAAAAAAAAAAAAAAAAAAAAD%2F2gAMAwEAAhEDEQA%2FAP0to%2FZNodGgim06LvFEmcCMjnOOap0vsVPbSSm402AK0WwbdhOcinmzH8IoHlVhEjTgqcKPCgT5uzE5uwYdHt2jATklAegzxRWw7P20N5cPLYRKrn3coh8fSjMM8E%2B%2FuJEk2MUfac4I6irs0AHV7XTrDS3mW1g3n3VxGMj8qF6Lo%2BnX5aea1gUbQSgjGcnz4zRPtPZX19BbxWlu8oBbvCuOPKh2mNqmkXLOdNuWidQjhUJIx0I88UBGTs7o9zA4j0%2B2idAQGSAD3vp0pUutMso3Qx20CTZ3B1jXII%2BVOE%2BrHZts7G%2FLspXc9uygevxpYuNM1C53H2C4JzkHYeKBk0m206%2F08SNZ26zKdki92vB8%2BnQ9a3fZGnYH8JB%2FbX9qFdk7a7t4rsXNrNDuZSokTHnTGevJoAWoJpOnnbJp6sx6ERKFPzNBp722fIhs7WMekak%2FUj9KL9oIzJeW2AOD4%2FGjgtrfd%2Fxof7Y%2FagRGMUUMU4t4tzlgeAcgYx1GPyrQl9Y92VnsLUnIO4RqOh%2BBFe9St23YUKB30uADjHIoc1tLsPK%2FWg2m40xiWWzXB5H3UdSh6QSCNR7vT0qUDrpt%2FFNDNHvRTFJ3eSw97gHP51m1rVriweAWjxMrg7gfe5FK1vBF7Krd3IDxld3Iq14lSFNsRJJJIbwoD%2FZUL3F3IEVd8oJ2%2BPFMJxnnxoB2WB9iuMoF%2B8HHyo8SAhYkADknyFBOM5%2BVdGQcjigF92s063BS0V7uQeK8KPnQc9p9Re8Y3Eq2yAe7Gi%2BPr40DvkkcE1PmaVYO0c7DPfQSAf1e6a3x9oM%2F7lqfjG%2BaA1z1z86nJ%2FzQ5NasW4dpI%2FR1rXHe2cxHdXUTZ8N1AJ14jv4iSM4zQkyv%2FwB1v%2Femq4sLK9ZWurWKbb%2BEtziqPsHRfHTLf6H96BdmYGzhJYZ3Pzn4VmZl2n3h086a20PR2iWNtNgKKSVXBwM9fH0qt%2Bz%2BhhD%2FANLt%2FwA%2F3oFJWGwcr086lGG0rTFYqun24AOAMH96lADttI1n2ZB7HdcZ%2FlPjWsxXNjZD22KWNix2rJwW4pxs%2FwDiqOnFXMscjbWWN2XqGAJFAC7KtvtLpi24mQZ%2BlHyAylGAKkYI864qIgwiKmf6QBUk37Pu%2FwAVBgfQtFfh9MgA9AR%2BtDrzRtJGme1mzUybsFt7eZHn6UwIGCDedzeNUzWqy2Rtu8YDOc49c0CmukabO7R7GRVQNhJOpzjxqf6csudlzOvwINH49LkjvGImBRkxu97g5zjGa0%2BwKAd0zfIfuaBZg0mITmI3l3hCACr4zkA0TOi26XE0RubpxHCJAWKkk%2B96egonFpsMc8kpZ23EEDoBgAVoMKNK8pyWdBG3PUDP7mgW7C6soYQ04uBKDkd2xC49RTBaXsN7E0sIcANtOR414TTdPT8NnEcf1An%2FADWhIo4l2xIsY8lGBQR5NmBgmut%2FtH4V68%2BTXhwe7JHj4UARwO8bjxNSsM%2Bs6dFcyRvcgMrFSMjgg1KA1Ksh0RpIn7uSNd6tnHIFXaYd%2BnLclw7z%2FeMw6Hwx8gKEapfCHT7ezU4Mpy%2BPBR%2F9qzs7c4M%2BnOfwnvY8%2BR6j5H%2FNAfz4D51zxqdOcV3of1FANt9c0%2BaItJdQwOHZDHI4yMHFWjV9KzzqNt%2FcFKFzHdi7ncyKF3sclx0zVcSXTlWSRWGRyHHnQPjhjtMbAZ6nzrNc6nbWeoR2twyxiSMuJHYAcEDHxrWccc%2BNLXazvFeCRFyEjYn05FAUbXdMW9S39rhKshYyiQbVI8D6muxa7pslxPG13AgjYKrGQYfIzkUhC4mNu020EKwU%2FOuNdTLCjlF97OD8KD6LZahDftcCEhlhk2bw2VfjORWrrzmgXZYP9mzGRSCXBwfhR360Ex51j1a8Wx0iaf8AnA2qP%2FI8CtnpmlbtXdM80doqsERd5OOCT0%2FKgSJMmZyWycnJJ6%2FlUq1oLksSqPgnIwGqUBW5vReXTz7hg8L6KOlborwWt3BqCtzEfvAD%2FKeGH60uWv4ox4bqmmMzafNuYn3j1PpQfWVljZQyupUjI56ivQZCR7w%2BtKmjSO3Z%2ByJdie5Xqa3bmwPeP1oBN7EkomieWOJ3ZtuVOeT4%2BVV2VmLVBbSyxGYuDjaeOemfOsupO%2F2ix3Nnjxrsjv8AbgO5s96PGg2tqOptNKTqE8aZYRHZkOQeFGPGsN1LdX8ixXckjuMgd5wVHj8KEyTzjV9WUTSALFlQGPB9KIaJJI%2FZh2eRmbZjJOT40Hv7LQKQJ1MeRl%2BcD9a4dLXaA06qvO1ieG%2BFRSfs6Q5Oe9H%2BDUlZvZoBuONrePrQM3ZZRHYXMbYUrKAfpR7evgw%2BtLlo7mIZdvwjxrRubP4j9aA3vTH4hQrUdF0%2FUJWnlmuVkxj7uXj6HgVTvb%2Bo9POvLu%2Fd%2FiPTzoAT9l9MMrE3t7nJ%2FnH7VKvZm3t7x6%2BdSg%2F%2F2Q%3D%3D)
 }
 
 .photo_view .pop_image_small .image_link {
@@ -707,7 +702,6 @@ address {
 .photo_view .pop_image_small .has_video {
     width: 47px;
     height: 39px;
-    background-image: url(https://a2.muscache.com/airbnb/static/page2/v3/video-link-large-6989fe29c13e3af133657e420068426b.png);
     margin-top: -19px;
     margin-left: -22px
 }
@@ -766,7 +760,6 @@ address {
 .pop_image_small .has_video {
     width: 35px;
     height: 29px;
-    background: url(https://a2.muscache.com/airbnb/static/page2/v3/p2_sprite-6f5dec161f2844cf6d6c6ddaa4e6ba4f.png) no-repeat 0 -108px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -839,7 +832,6 @@ h2.room_title {
     right: 10px;
     top: 19px;
     width: 36px;
-    background: url(https://a1.muscache.com/airbnb/static/uiwidgets/transparent_black_40_pc-ba3f75ba6e984b506ba9a829459ea1a1.png) repeat 0 0
 }
 
 .buttons_container {
@@ -916,7 +908,6 @@ ul.reputation {
 }
 
 .badge_image {
-    background: url(https://a0.muscache.com/airbnb/static/page3/p3_sprite-4699b0ae549a362b1a5fcc4550c52626.png) no-repeat 0 0;
     display: block;
     width: 30px;
     height: 27px;
@@ -1221,7 +1212,6 @@ ul.reputation {
 }
 
 #fbconnect_accounts_linked span.double_arrow {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWCAAAAAB80jpvAAAAAnRSTlMA6NhCp3IAAACJSURBVCjPpZNBCoMwFERz%2FzOV9wO1LqRYBHcWF7rJMQpWIWo0I75VyH%2BL8Gfigo6Lzq%2FE3KqUW%2FNIuFDu3RJIutjGHZ4cuti4cpkwbxv%2B98QuOcbF%2FZJndlvQZBfeaLTBfVBpLrnyG5ppD5Laz%2FsV1E7PYogy9qcZ%2B3V3irPu6J30t7p%2B6Q%2Fl%2BQGIGglKfsgi0gAAAABJRU5ErkJggg%3D%3D) no-repeat center center;
     height: 48px;
     width: 52px;
     display: inline-block

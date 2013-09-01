@@ -3,9 +3,9 @@
     <div class="container container-full-width">
       <a href="/home/index" class="brand">ServiceS</a>
       <ul class="nav pull-right">
-        <li class="brand">
+        <li>
           <% if cookies[:user_id] %>
-              <%= cookies[:user_name] %>
+              <%= current_user.name %>
           <% else %>
               <%= link_to 'Entrar com Facebook', '/auth/facebook' %>
           <% end %>

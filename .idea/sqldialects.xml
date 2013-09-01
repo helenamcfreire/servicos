@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/sql/cidades-brasil.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/empresas-servicos.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/empresas.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/pais-estados-cidades.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/servicos.sql" dialect="PostgreSQL" />
   </component>
 </project>
 

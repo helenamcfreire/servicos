@@ -1,6 +1,12 @@
+<div class="alert alert-success" id="modalSucesso" style="display: none">
+  Sua avaliação foi enviada com sucesso
+</div>
+
 <div class="rooster-root"></div>
 
 <%= render "/header" %>
+
+
 
 <div class="span12 flash-container">
 </div>
@@ -59,39 +65,101 @@
         </div>
       </div>
 
+      <div id="details" class="space2">
+        <div class="middle panel-border clearfix">
+          <ul class="nav nav-tabs panel-background-gray">
+            <li class="active">
+              <a id="description_link" href="#">
+                Envie uma Avaliação
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content panel-padding clearfix">
+            <div class="left">
+              <div class="profile_pic">
+                <div class="matte-media-box">
+                  <img class="lazy" height="68" src="<%= current_user.photo_url %>" width="68" style="display: inline;">
+                </div>
+                <br/>
+                        <span class="name">
+                              <a href="#" rel="nofollow"><%= current_user.name %></a>
+                        </span>
+              </div>
+            </div>
+            <div class="right">
+              <div style="width: 525px">
+                <div class="rateit bigstars"
+                     data-rateit-starwidth="32"
+                     data-rateit-starheight="32"
+                     data-rateit-step="1"
+                     data-rateit-resetable="false"
+                     style="margin-bottom: 15px"></div><br/>
+
+                <input type="text" id="titulo" placeholder="Escreva um título" style="width: 330px"/><br/>
+                <textarea id="comentario" placeholder="Escreva um comentário" style="width: 430px; height: 100px"></textarea><br/>
+                <input type="button" class="btn" id="enviarComentario" value="Enviar Avaliação"></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
       <div id="reputation" class="space2">
         <a name="reputation-mark"></a>
         <div id="reputation_middle" class="clearfix middle panel-border">
           <ul id="reputation_sub_nav" class="nav nav-tabs panel-background-gray">
             <li class="active" id="this_hosting_reviews_link">
-              <a href="#">Avaliações (<span>24</span>)</a>
+              <a href="#">Avaliações (<span><%= @empresa_servico.avaliacaos.length %></span>)</a>
             </li>
 
           </ul>
 
           <div class="tab-content panel-padding clearfix">
+
             <div id="this_hosting_reviews" class="tab-pane rep_content active">
 
               <div class="clear"></div>
               <ul class="unstyled reviews-list clearfix">
-                <li class="reviews-list-item space1 clearfix" id="review_6488012">
-                  <div class="overflow">
-                    <div class="right">
-                      <div class="speech-bubble">
-                        <p class="message">
-                          Mi primera experiencia con Airbnb... y fue excelente.
-                          <br>Marìa das Gracas es una atenta anfitriona, buena persona, muy agradable y cordial.
-                          <br>El apartamento està bien ubicado, en una calle tranquila y a sòlo dos cuadras de la playa de Copacabana. La habitaciòn es amplia y còmoda y, muy importante, con un buen colchon. Buen desayuno brasilero, con la dueña de casa siempre atenta a los gustos de sus huèspedes.
-                          <br>Lo recomiendo como una muy buena opciòn, y màs econòmica, que la de los servicios estandarizados de hoteles e incluso de hostels.
-                        </p>
-                        <span class="date">Agosto 2013</span>
+
+                <% @empresa_servico.avaliacaos.each do |avaliacao| %>
+
+                    <li class="reviews-list-item space1 clearfix">
+                      <div class="overflow">
+                        <div class="left">
+                          <a name="review_6818823"></a>
+                          <div class="profile_pic">
+                            <div class="matte-media-box">
+                              <img class="lazy" height="68" src="<%= avaliacao.user.photo_url %>" width="68" style="display: inline;">
+                            </div>
+                        <span class="name">
+                          <a href="#" rel="nofollow"><%= avaliacao.user.name %></a>
+                        </span>
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="speech-bubble">
+
+                            <h4>"<%= avaliacao.titulo %>"</h4>
+                            <p class="message">
+                              <%= avaliacao.comentario %>
+                            </p>
+                            <div class="rateit" data-rateit-value="<%= avaliacao.rate %>"
+                                 data-rateit-step="1"
+                                 data-rateit-resetable="false"
+                                 data-rateit-ispreset="true"
+                                 data-rateit-readonly="true"
+                                 style="float: right"></div>
+                            <span class="date"><%= I18n.localize(avaliacao.created_at, :format => '%B %Y') %></span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
+                    </li>
+
+                <% end %>
               </ul>
-
-
 
             </div>
 
@@ -133,5 +201,32 @@
 </div>
 </div>
 
-
 </div>
+
+
+<script type ="text/javascript">
+    $('#enviarComentario').click(function (e) {
+
+        var rate = $('.rateit').rateit('value');
+        var titulo = $('#titulo').val();
+        var comentario = $('#comentario').val();
+
+        $.ajax({
+            url: '/empresa/rate', //your server side script
+            data: { rate: rate, titulo: titulo, comentario: comentario, empresa_servico_id: <%= @empresa_servico.id %> },
+            type: 'POST',
+            success: function (data) {
+                event.preventDefault();
+                $("#modalSucesso").show("slow");
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+
+                setInterval('location.reload()', 3000);
+
+            },
+            error: function (jxhr, msg, err) {
+                alert("Xiii..Algo deu errado");
+            }
+        });
+    });
+
+</script>
