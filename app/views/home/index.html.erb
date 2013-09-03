@@ -21,20 +21,22 @@
 
       <%= form_tag({controller: "servico", action: "find"}, method: "get", class: "custom show-search-options position-left", id: "search_form") do %>
           <div class="input-wrapper">
-            <%= text_field_tag :nome_servico, nil, class: "location", id: "servicos", placeholder: "Qual serviço você deseja?" %>
+            <%= text_field_tag :nome_servico, nil, class: "location", id: "servicos", placeholder: "Qual serviço você deseja?", required: 'required' %>
           </div>
           <div class="input-wrapper">
             <%= select_tag :estado_id, options_from_collection_for_select(@estados, 'id', 'nome'),
                            :prompt => 'Estado',
                            :style => 'margin-bottom: 0px; height: 40px',
-                           :id => 'estados' %>
+                           :id => 'estados',
+                           :required => 'required' %>
 
           </div>
           <div class="input-wrapper">
             <%= select_tag :cidade_id, nil,
                            :prompt => 'Cidade',
                            :id => 'cidades',
-                           :style => 'margin-bottom: 0px; height: 40px' %>
+                           :style => 'margin-bottom: 0px; height: 40px',
+                           :required => 'required'%>
           </div>
 
 

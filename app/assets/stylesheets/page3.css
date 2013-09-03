@@ -3571,7 +3571,7 @@ body {
     float: right;
 }
 
-.alert {
+.alert-big {
     position:absolute;
     left: 0;
     top: 0;

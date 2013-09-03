@@ -1,4 +1,4 @@
-<div class="alert alert-success" id="modalSucesso" style="display: none">
+<div class="alert alert-success alert-big" id="modalSucesso" style="display: none">
   Sua avaliação foi enviada com sucesso
 </div>
 
@@ -44,16 +44,12 @@
                 Em um ano transformou a empresa na maior rede de franquias de reparos e reformas do Brasil e também na que mais cresceu comparada a todas as outras marcas.
               </p>
               <h4>
-                                    <span id="display_address">
-                                          <%= @empresa_servico.empresa.endereco %>
-                                    </span>
+                    <span id="display_address">
+                          <%= @empresa_servico.empresa.endereco %>
+                    </span>
               </h4>
 
             </div>
-
-
-
-
 
           </div>
         </div>
@@ -71,15 +67,20 @@
               </ul>
 
               <div class="tab-content panel-padding clearfix">
+
+                <div class="alert alert-error" id="error-avaliacao" style="display: none"></div>
+
+                <br/>
+
                 <div class="left">
                   <div class="profile_pic">
                     <div class="matte-media-box">
                       <img class="lazy" height="68" src="<%= current_user.photo_url %>" width="68" style="display: inline;">
                     </div>
                     <br/>
-                            <span class="name">
-                                  <a href="#" rel="nofollow"><%= current_user.name %></a>
-                            </span>
+                        <span class="name">
+                              <a href="#" rel="nofollow"><%= current_user.name %></a>
+                        </span>
                   </div>
                 </div>
                 <div class="right">
@@ -201,11 +202,40 @@
 
 
 <script type ="text/javascript">
+
+    $.fn.multiline = function(text){
+        this.text(text);
+        this.html(this.html().replace(/\n/g,'<br/>'));
+        return this;
+    };
+
     $('#enviarComentario').click(function (e) {
 
         var rate = $('.rateit').rateit('value');
         var titulo = $('#titulo').val();
         var comentario = $('#comentario').val();
+
+        var hasErrors = rate == 0 || titulo == '' || comentario == '';
+
+        var errorMsg = '';
+
+        if (rate == 0)
+            errorMsg += 'Oops..você esqueceu de dar a sua nota =( \n';
+
+        if (titulo == '')
+            errorMsg += 'Oops..você esqueceu de escrever um título =( \n';
+
+        if (comentario == '')
+            errorMsg += 'Oops..você esqueceu de escrever um comentário =( \n';
+
+        if(hasErrors) {
+            var $error = $("#error-avaliacao");
+
+            $error.multiline(errorMsg);
+            $error.show("slow");
+            return;
+        }
+
 
         $.ajax({
             url: '/empresa/rate', //your server side script

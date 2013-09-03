@@ -4133,12 +4133,14 @@ a:hover .matte-media-box, a:hover .beveled-media-box, a:hover.beveled-media-box 
 
 .label-orange {
     background-color: #f08e29;
-    border-color: #d7750f
+    border-color: #d7750f;
+    border-radius: 25px;
 }
 
 .label-green {
     background-color: #61cb07;
-    border-color: #499a05
+    border-color: #499a05;
+    border-radius: 25px;
 }
 
 .label-lightblue {
@@ -4973,4 +4975,8 @@ a.location-host-text {
 #lwlb_contact .content-row.hosting_social_proof h3, #lwlb_contact .content-row.hosting_social_proof p {
     font-size: 18px;
     line-height: 24px
+}
+
+.rateit:hover {
+    cursor: pointer;
 }
