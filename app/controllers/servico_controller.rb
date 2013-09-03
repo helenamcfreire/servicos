@@ -20,6 +20,9 @@ class ServicoController < HomeController
 
     @estados = Estado.all
 
+    ServicoPesquisado.new(:nome => params[:nome_servico])
+                     .save
+
     render :list
 
   end
