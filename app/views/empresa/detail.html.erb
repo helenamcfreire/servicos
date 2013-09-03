@@ -121,7 +121,7 @@
               <div class="clear"></div>
               <ul class="unstyled reviews-list clearfix">
 
-                <% @empresa_servico.avaliacaos.each do |avaliacao| %>
+                <% @avaliacaos.each do |avaliacao| %>
 
                     <li class="reviews-list-item space1 clearfix">
                       <div class="overflow">
@@ -156,6 +156,8 @@
                     </li>
 
                 <% end %>
+
+                <%= will_paginate @avaliacaos %>
               </ul>
 
             </div>

@@ -15,6 +15,7 @@ class EmpresaController < HomeController
 
   def detail
       @empresa_servico = EmpresaServico.find(params[:id])
+      @avaliacaos = @empresa_servico.avaliacaos.paginate(:page => params[:page], :per_page => 10)
   end
 
   def rate

@@ -11,10 +11,25 @@ class ServicoController < HomeController
                                       .where(:servico_id => servicos, :cidades => { :id => params[:cidade_id]})
                                       .paginate(:page => params[:page], :per_page => 10) if servicos != nil
 
+
+    @empresa_servicos = @empresa_servicos.order(:preco) if ordenar_por_preco
+
+    @empresa_servicos = @empresa_servicos.joins('LEFT JOIN avaliacaos ON avaliacaos.empresa_servico_id = empresa_servicos.id')
+                                         .group('empresa_servicos.id')
+                                         .order('count(avaliacaos.id) DESC') if ordenar_por_avaliacao
+
     @estados = Estado.all
 
     render :list
 
+  end
+
+  def ordenar_por_preco
+    params[:ordenar_por] == 'preco'
+  end
+
+  def ordenar_por_avaliacao
+    params[:ordenar_por] == 'avaliacao'
   end
 
   def list

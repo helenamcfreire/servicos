@@ -6,10 +6,12 @@
 
 
 <div id="v3_search" class="container clearfix list_view" style="">
-  <div id="search_params" class="panel-padding panel-background-gray panel-border">
-    <div class="clearfix">
 
-      <%= form_tag({controller: "servico", action: "find"}, class: "search_form position-left", id: "search_form") do %>
+
+  <%= form_tag({controller: "servico", action: "find"}, method: "get", id: "search_form") do %>
+
+    <div id="search_params" class="panel-padding panel-background-gray panel-border">
+
           <%= text_field_tag :nome_servico, params[:nome_servico], class: 'active', id: 'servicos', placeholder: 'Qual serviço você deseja?', style: 'width: 422px' %>
 
           <%= select_tag :estado_id, options_from_collection_for_select(@estados, 'id', 'nome', params[:estado_id]),
@@ -23,10 +25,12 @@
           <div class="btn-icon-container pull-left">
             <%= submit_tag "Buscar", class: "btn green" %>
           </div>
-      <% end %>
 
     </div>
-  </div>
+
+    Ordenar por: <%= select_tag :ordenar_por, options_for_select([['Avaliação','avaliacao'],['Preço','preco']], params[:ordenar_por]), :id => 'ordenacao' %>
+
+  <% end %>
 
 
   <div class="search-container row">
@@ -146,6 +150,10 @@
     /*       CARREGANDO A COMBO DE CIDADES AO MUDAR ESTADO     */
     $('#estados').change(function(){
         carregarCidades();
+    });
+
+    $('#ordenacao').change(function(){
+        $('#search_form').submit();
     });
 
 </script>
